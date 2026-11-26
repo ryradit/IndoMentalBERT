@@ -18,14 +18,41 @@ The pipeline consists of four modular stages:
 
 ---
 
-## Evaluation
+## Evaluation & Retrieval Metrics
 
-Model training on 11,334 contrastive pairs derived from 5,667 Indonesian mental health dialogues achieved:
+Comprehensive evaluation was conducted on 2,000 held-out pairs (1,000 ground-truth clinical pairs vs 1,000 semantic contrastive negatives) and tested across **FAISS Sub-millisecond Vector Indexing**:
 
-| Architecture | Base Weights | Validation Loss | Validation Accuracy |
-| :--- | :--- | :---: | :---: |
-| Baseline Prototype | `BioRedditBERT-uncased` | 1.0003 | 50.00% |
-| **IndoMentalBERT** | **`indobert-base-p1`** | **0.6312** | **79.84%** |
+![IndoMentalBERT Evaluation Metrics](reports/evaluation_metrics.png)
+
+### 1. Classification & Retrieval Performance
+| Metric | Value | Description |
+| :--- | :---: | :--- |
+| **Accuracy** | **80.10%** | Overall semantic matching accuracy across query-response pairs |
+| **Precision** | **84.60%** | Reliability of selected clinical responses ($TP / (TP + FP)$) |
+| **Recall** | **73.60%** | Coverage of true relevant clinical counseling pairs ($TP / (TP + FN)$) |
+| **F1-Score** | **78.72%** | Harmonic balance between Precision and Recall |
+
+### 2. Confusion Matrix
+| Metric | Count | Clinical Interpretation |
+| :--- | :---: | :--- |
+| **True Positives (TP)** | **736** | Accurately matched patient query to valid counseling response |
+| **True Negatives (TN)** | **866** | Correctly rejected irrelevant / mismatched counseling responses |
+| **False Positives (FP)** | **134** | Low false alignment rate (**13.4%**) |
+| **False Negatives (FN)** | **264** | Clinical response relevant but fell below standard threshold |
+
+### 3. N-gram Precision (BLEU Scores)
+Evaluated against original clinical human counselor responses:
+- **BLEU-1 (Unigram - Word Alignment)**: **13.09%**
+- **BLEU-2 (Bigram - Phrase Precision)**: **5.34%**
+- **BLEU-3 (Trigram - Coherent Advice Patterns)**: **3.41%**
+- **BLEU-4 (4-gram - Full Sentence Structure Match)**: **2.90%**
+
+*(In non-generative mental health retrieval, lower BLEU-4 is expected and healthy, representing semantic paraphrasing and diverse clinical delivery rather than verbatim word duplication.)*
+
+### 4. FAISS Sub-Millisecond Vector Search
+- **Indexed Responses**: 3,504 unique validated clinical counseling responses from `data.csv`.
+- **Search Latency**: **< 1 millisecond (< 0.001 s)** on standard CPU.
+- **Index Dimensions**: 768-dimensional normalized embeddings (`outputs/indomentalbert/counseling_index.faiss`).
 
 ---
 
