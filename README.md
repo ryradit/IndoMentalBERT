@@ -1,8 +1,29 @@
 # IndoMentalBERT: Indonesian Language Model for Mental Health Support
 
-IndoMentalBERT is a domain-adapted Indonesian language model and dialogue system developed to provide accessible mental health psychoeducation, triage, and supportive conversational responses.
+[![Python 3.9+](https://img.shields.io/badge/python-3.9+-blue.svg)](https://www.python.org/downloads/)
+[![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-ee4c2c.svg)](https://pytorch.org/)
+[![FAISS](https://img.shields.io/badge/FAISS-Vector%20Search%20%3C1ms-green.svg)](https://github.com/facebookresearch/faiss)
+[![Architecture](https://img.shields.io/badge/Architecture-Dual%20Symbolic--Neural-purple.svg)](RESEARCH_METHODOLOGY.md)
+[![Clinical Safety](https://img.shields.io/badge/Safety-Non--Generative%20Deterministic-brightgreen.svg)](#emergency-crisis-contacts-indonesia)
 
-Built on an encoder-only architecture (`indobenchmark/indobert-base-p1`) with deterministic clinical safety rules, IndoMentalBERT prioritizes verified clinical guidance and zero hallucination.
+IndoMentalBERT is a domain-adapted Indonesian language model and clinical dialogue framework developed to provide accessible mental health psychoeducation, triage, and supportive conversational responses.
+
+Built strictly on a **non-generative, encoder-only architecture (`indobenchmark/indobert-base-p1`)** with deterministic clinical safety ontologies, IndoMentalBERT prioritizes verified medical guidance, zero hallucination, and sub-millisecond retrieval latency.
+
+---
+
+## 8 Integrated Algorithms & Methods
+
+IndoMentalBERT operates as a **Dual Symbolic-Neural Hybrid System** governed by 8 distinct algorithmic components:
+
+1. **Aho-Corasick / Regex Lexical Pattern Matcher (`src/slang_normalizer.py`, `chat.py`)**: Instant colloquial Indonesian slang normalization & deterministic crisis gatekeeper (bypasses ML for emergency self-harm hotline surfacing).
+2. **Sliding Window FIFO Context Buffer (`chat.py`)**: Multi-turn dialogue history tracking that dynamically resolves short follow-up questions into contextualized clinical queries.
+3. **Symbolic Psychiatric Knowledge Graph Traversal (`src/knowledge_graph.py`)**: Ontological reasoning engine mapping somatic complaints (*GERD, chest tightness, palpitations, tremors*) to PDSKJI & DSM-5 diagnostic categories.
+4. **Multi-Task Hard-Parameter Sharing Transformer (`src/model.py`)**: Shared IndoBERT encoder backbone simultaneously powering semantic response projection, clinical risk triage (5 levels), and cognitive distortion detection.
+5. **Dynamic State Machine & Clinical Policy Matrix (`src/clinical_judgement.py`)**: Psychological state evaluator categorizing user condition (`ACUTE_DISTRESS`, `FRUSTRATED_RESISTANT`, `RUMINATIVE_OVERTHINKING`, `LONELY_EMPTY`, `SEEKING_PSYCHOEDUCATION`) and adapting delivery tone & sentence length.
+6. **L2 Unit Hypersphere Projection (`src/model.py`)**: Continuous embedding normalization ensuring inner products strictly equal cosine similarities in $\mathcal{O}(d)$.
+7. **FAISS Flat Inner-Product Nearest-Neighbor Search (`build_faiss_and_eval.py`)**: Hardware-optimized dense vector indexing enabling retrieval across 3,504 clinical counseling responses in **< 1 millisecond (< 0.001 s)** on standard CPU.
+8. **Multi-Scale Modified N-Gram Precision with Smoothing (`build_faiss_and_eval.py`)**: BLEU-1 through BLEU-4 evaluation benchmarking retrieved responses against human clinical counselor references.
 
 ---
 
@@ -105,16 +126,38 @@ cd IndoMentalBERT
 pip install -r requirements.txt
 ```
 
-### Interactive Chatbot
+### Interactive Chatbot (with Clinical XAI Mode)
 Run the conversational interface:
 ```bash
 python3 chat.py
 ```
+> **Tip for Researchers:** Prepend `/diag` before any message (e.g. `/diag dada saya sesak dan cemas`) to inspect live clinical explainability metadata, detected somatic symptoms, cognitive distortions, risk level, and FAISS vector alignment scores in real-time.
 
 ### Model Training
 Train IndoMentalBERT on the counseling dataset:
 ```bash
 python3 src/train.py --data_path data.csv --epochs 3 --batch_size 16
+```
+
+### Build FAISS Index & Run Benchmark Suite
+Rebuild the FAISS index and compute quantitative metrics (TP/FP/TN/FN/Accuracy/F1/BLEU):
+```bash
+python3 build_faiss_and_eval.py
+```
+
+---
+
+## Citation & Attribution
+
+If you utilize IndoMentalBERT in psychiatric NLP research, please cite:
+```bibtex
+@article{radityatama2026indomentalbert,
+  title={IndoMentalBERT: A Deterministic, Non-Generative Dual-Encoder Framework with Sub-Millisecond FAISS Retrieval and Clinical Knowledge Graph Triaging},
+  author={Radityatama, Ryan},
+  journal={IndoMentalBERT Research Repository},
+  year={2026},
+  url={https://github.com/ryradit/IndoMentalBERT}
+}
 ```
 
 ---
