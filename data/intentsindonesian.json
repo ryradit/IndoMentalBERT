@@ -1,0 +1,133 @@
+{
+  "intents": [
+    {
+      "tag": "salam",
+      "patterns": [
+        "Hai",
+        "Halo",
+        "Apakah ada orang di sana?",
+        "Hai ada orang?",
+        "Halo apa kabar?",
+        "Permisi mau cerita"
+      ],
+      "responses": [
+        "Halo. Ceritakan bagaimana perasaanmu hari ini.",
+        "Halo, saya di sini untuk mendengarkan. Apa yang sedang kamu rasakan?",
+        "Hai, selamat datang. Ruang ini aman untuk kamu berbagi cerita."
+      ]
+    },
+    {
+      "tag": "pagi",
+      "patterns": [
+        "Selamat pagi",
+        "Pagi",
+        "Selamat pagi apa kabar"
+      ],
+      "responses": [
+        "Selamat pagi. Saya harap tidur malam Anda nyenyak. Bagaimana perasaanmu pagi ini?",
+        "Selamat pagi. Semoga harimu diawali dengan tenang. Ada yang ingin diceritakan?"
+      ]
+    },
+    {
+      "tag": "siang",
+      "patterns": [
+        "Selamat siang",
+        "Siang",
+        "Hai selamat siang"
+      ],
+      "responses": [
+        "Selamat siang. Bagaimana harimu sejauh ini?",
+        "Selamat siang. Luangkan waktu sejenak untuk bernapas. Bagaimana perasaanmu?"
+      ]
+    },
+    {
+      "tag": "malam",
+      "patterns": [
+        "Selamat malam",
+        "Malam",
+        "Malam belum bisa tidur"
+      ],
+      "responses": [
+        "Selamat malam. Bagaimana perasaanmu hari ini sebelum beristirahat?",
+        "Selamat malam. Semoga pikiranmu bisa lebih tenang malam ini. Ada yang membebanimu?"
+      ]
+    },
+    {
+      "tag": "fakta_cemas",
+      "patterns": [
+        "Apa perbedaan antara kecemasan dan stres?",
+        "Kenapa saya selalu merasa cemas tanpa alasan?",
+        "Cemas berlebihan apakah tanda gangguan mental?",
+        "Bagaimana mengatasi rasa cemas yang terus datang?"
+      ],
+      "responses": [
+        "Stres biasanya merupakan respon terhadap pemicu eksternal, sedangkan kecemasan sering kali bertahan bahkan setelah pemicu hilang. Latihan pernapasan dalam dapat membantu meredakan gejala fisik kecemasan, namun bila berlanjut, konsultasi dengan psikolog sangat dianjurkan.",
+        "Kecemasan yang muncul terus-menerus bisa menjadi sinyal bahwa tubuh dan pikiranmu sedang kelelahan emosional. Cobalah teknik grounding 5-4-3-2-1 dan pertimbangkan menemui profesional jika mengganggu aktivitas harian."
+      ]
+    },
+    {
+      "tag": "fakta_depresi",
+      "patterns": [
+        "Apa sajakah tanda tanda peringatan depresi?",
+        "Saya merasa hampa dan kehilangan minat pada semua hal",
+        "Apakah saya mengalami depresi klinis?",
+        "Bagaimana cara mengetahui jika saya depresi?"
+      ],
+      "responses": [
+        "Tanda peringatan depresi meliputi hilangnya minat pada aktivitas, perasaan hampa atau putus asa yang berlangsung berminggu-minggu, gangguan tidur, dan perubahan nafsu makan. Ingat, diagnosis hanya bisa ditegakkan oleh psikolog atau psikiater berlisensi.",
+        "Perasaan hampa yang berkepanjangan adalah hal yang berat untuk dihadapi sendirian. Sangat wajar untuk mencari bantuan profesional kesehatan mental agar kamu mendapatkan dukungan yang tepat."
+      ]
+    },
+    {
+      "tag": "fakta_terapi",
+      "patterns": [
+        "Apa itu terapi apakah saya memerlukan terapi?",
+        "Kapan waktu yang tepat untuk pergi ke psikolog?",
+        "Bagaimana cara memilih terapis yang tepat?",
+        "Apakah ke psikolog berarti saya gila?"
+      ],
+      "responses": [
+        "Terapi adalah ruang aman bersama profesional untuk memahami pikiran, emosi, dan pola perilaku. Kamu tidak perlu menunggu sampai 'krisis parah' untuk pergi ke psikolog; merawat kesehatan mental sama wajarnya dengan merawat kesehatan fisik.",
+        "Pergi ke psikolog adalah tanda keberanian dan kepedulian terhadap diri sendiri. Terapis yang baik akan mendengarkan tanpa menghakimi dan membantumu menemukan strategi menghadapi masalah."
+      ]
+    },
+    {
+      "tag": "fakta_burnout",
+      "patterns": [
+        "Apa yang dimaksud dengan burnout dan bagaimana mengatasinya?",
+        "Saya sangat lelah bekerja dan tidak punya motivasi lagi",
+        "Gejala kelelahan mental karena pekerjaan",
+        "Bagaimana cara pulih dari burnout?"
+      ],
+      "responses": [
+        "Burnout adalah kondisi kelelahan fisik, emosional, dan mental yang disebabkan oleh stres berkepanjangan, terutama terkait pekerjaan. Langkah awal mengatasinya adalah menetapkan batasan yang sehat, mengambil jeda istirahat, dan membicarakan beban kerja dengan pihak terkait.",
+        "Kelelahan mental membutuhkan pemulihan aktif: istirahat berkualitas, nutrisi baik, dan menjauh sejenak dari pemicu stres sebelum kembali bekerja secara bertahap."
+      ]
+    },
+    {
+      "tag": "fakta_bipolar",
+      "patterns": [
+        "Apa itu gangguan bipolar?",
+        "Kenapa suasana hati saya berubah sangat cepat?",
+        "Perbedaan mood swing biasa dengan gangguan bipolar"
+      ],
+      "responses": [
+        "Gangguan bipolar adalah kondisi kesehatan mental yang ditandai dengan perubahan suasana hati yang ekstrem, meliputi episode mania (sangat bersemangat/berenergi tinggi) dan episode depresi (sangat terpuruk). Penanganan profesional seperti psikoterapi dan obat penstabil suasana hati sangat efektif.",
+        "Perubahan suasana hati pada bipolar berlangsung dalam periode waktu yang lebih panjang dan intens dibanding perubahan suasana hati harian biasa. Pemeriksaan oleh psikiater sangat penting untuk memastikannya."
+      ]
+    },
+    {
+      "tag": "krisis_darurat",
+      "patterns": [
+        "Saya ingin mengakhiri hidup",
+        "Saya ingin bunuh diri",
+        "Saya merasa tidak ada gunanya hidup lagi",
+        "Saya ingin menyakiti diri sendiri"
+      ],
+      "responses": [
+        "Kamu sangat berharga dan tidak sendirian. Mohon segera hubungi orang terdekat atau layanan darurat kesehatan mental Indonesia sekarang juga:\n• LISA Suicide Prevention Helpline: 119 ext 8 (24 jam)\n• Hotline Kesehatan Jiwa Kemenkes: 119\n• Layanan Sejiwa: 119 ext 8\nBantuan profesional siap mendengarkanmu tanpa penghakiman.",
+        "Tolong jangan hadapi ini sendirian. Ada pertolongan untuk rasa sakit yang sedang kamu rasakan. Segera hubungi Hotline 119 atau kunjungi Instalasi Gawat Darurat (IGD) rumah sakit terdekat."
+      ]
+    }
+  ]
+}

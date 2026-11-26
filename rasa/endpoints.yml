@@ -1,0 +1,3 @@
+# Endpoints configuration for Rasa Action Server
+action_endpoint:
+  url: "http://localhost:5055/webhook"

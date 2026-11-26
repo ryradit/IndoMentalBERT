@@ -1,0 +1,35 @@
+version: "3.1"
+
+stories:
+  - story: interactive checkin anxiety to therapy
+    steps:
+      - intent: salam
+      - action: utter_salam
+      - intent: cemas_dan_stres
+      - action: utter_cemas_dan_stres
+      - intent: tanya_terapi_psikolog
+      - action: utter_tanya_terapi_psikolog
+      - intent: terima_kasih
+      - action: utter_terima_kasih
+      - intent: selamat_tinggal
+      - action: utter_selamat_tinggal
+
+  - story: depression emotional support flow
+    steps:
+      - intent: salam
+      - action: utter_salam
+      - intent: depresi_dan_hampa
+      - action: utter_depresi_dan_hampa
+      - intent: tanya_terapi_psikolog
+      - action: utter_tanya_terapi_psikolog
+      - intent: terima_kasih
+      - action: utter_terima_kasih
+
+  - story: workplace burnout to coping
+    steps:
+      - intent: salam
+      - action: utter_salam
+      - intent: burnout_kelelahan
+      - action: utter_burnout_kelelahan
+      - intent: terima_kasih
+      - action: utter_terima_kasih

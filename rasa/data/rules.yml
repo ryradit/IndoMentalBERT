@@ -1,0 +1,56 @@
+version: "3.1"
+
+rules:
+  # 1. Deterministic Crisis Safety Intervention (Highest Priority)
+  - rule: Crisis safety rule
+    steps:
+      - intent: krisis_darurat
+      - action: utter_krisis_darurat
+
+  # 2. Greetings and Pleasantries
+  - rule: Say greeting anytime
+    steps:
+      - intent: salam
+      - action: utter_salam
+
+  - rule: Say goodbye anytime
+    steps:
+      - intent: selamat_tinggal
+      - action: utter_selamat_tinggal
+
+  - rule: Say thanks anytime
+    steps:
+      - intent: terima_kasih
+      - action: utter_terima_kasih
+
+  - rule: Bot challenge
+    steps:
+      - intent: bot_challenge
+      - action: utter_iamabot
+
+  # 3. Direct Mental Health Guidance Rules
+  - rule: Handle anxiety / stress queries
+    steps:
+      - intent: cemas_dan_stres
+      - action: utter_cemas_dan_stres
+
+  - rule: Handle depression / emptiness queries
+    steps:
+      - intent: depresi_dan_hampa
+      - action: utter_depresi_dan_hampa
+
+  - rule: Handle therapy queries
+    steps:
+      - intent: tanya_terapi_psikolog
+      - action: utter_tanya_terapi_psikolog
+
+  - rule: Handle burnout queries
+    steps:
+      - intent: burnout_kelelahan
+      - action: utter_burnout_kelelahan
+
+  # 4. Out of Scope / Low Confidence Fallback Rule
+  - rule: Trigger fallback when NLU confidence is below threshold
+    steps:
+      - intent: nlu_fallback
+      - action: utter_default_fallback

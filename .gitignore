@@ -1,0 +1,48 @@
+# Model checkpoints (larger than GitHub's 100MB limit)
+outputs/*.pt
+outputs/*.bin
+outputs/*.safetensors
+*.pt
+*.bin
+*.safetensors
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+env/
+ENV/
+rasa_env/
+.venv/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# OS artifacts
+.DS_Store
+Thumbs.db
+
+# Rasa models & logs
+.rasa/
+rasa/models/
+rasa/.rasa/

@@ -1,0 +1,93 @@
+version: "3.1"
+
+nlu:
+  - intent: salam
+    examples: |
+      - hai
+      - halo
+      - halo apa kabar
+      - selamat pagi
+      - selamat siang
+      - selamat malam
+      - permisi
+      - apakah ada orang di sini
+      - hei
+      - halo asisten
+
+  - intent: selamat_tinggal
+    examples: |
+      - selamat tinggal
+      - sampai jumpa
+      - dah
+      - saya mau pamit
+      - terima kasih sudah mendengarkan saya pamit dulu
+      - sampai ketemu lagi
+
+  - intent: terima_kasih
+    examples: |
+      - terima kasih
+      - makasih banyak ya
+      - thanks
+      - ini sangat membantu
+      - terima kasih informasinya
+      - makasih sarannya
+
+  - intent: bot_challenge
+    examples: |
+      - apakah kamu robot
+      - kamu manusia atau ai
+      - siapa kamu
+      - kamu siapa
+
+  - intent: cemas_dan_stres
+    examples: |
+      - saya merasa cemas terus-menerus
+      - jantung saya berdebar kencang karena panik
+      - saya sering overthinking sampai susah tidur
+      - pikiran saya kacau dan tidak bisa tenang
+      - saya merasa gelisah tanpa alasan yang jelas
+      - kenapa saya selalu merasa cemas dan takut
+      - saya mengalami serangan panik tiba-tiba
+      - bagaimana cara meredakan rasa cemas berlebihan
+
+  - intent: depresi_dan_hampa
+    examples: |
+      - saya merasa sangat hampa
+      - tidak ada hal yang membuat saya bersemangat lagi
+      - saya merasa sedih berkepanjangan selama berminggu-minggu
+      - saya merasa tidak berharga bagi siapa pun
+      - hidup terasa sangat berat dan melelahkan
+      - saya sering menangis tanpa sebab yang pasti
+      - apakah saya mengalami depresi klinis
+      - rasanya saya kehilangan diri saya sendiri
+
+  - intent: tanya_terapi_psikolog
+    examples: |
+      - apakah saya butuh ke psikolog
+      - bagaimana cara konsultasi dengan terapis
+      - kapan waktu yang tepat untuk pergi ke psikiater
+      - apa bedanya psikolog dengan psikiater
+      - berapa biaya ke psikolog
+      - apakah ke psikolog berarti saya tidak waras
+      - saya ingin mencari bantuan profesional
+      - bagaimana langkah pertama untuk konseling
+
+  - intent: burnout_kelelahan
+    examples: |
+      - saya lelah secara mental karena pekerjaan
+      - saya merasa burnout parah
+      - energi saya habis dan tidak punya motivasi bekerja
+      - tekanan kerja membuat fisik dan mental saya drop
+      - bagaimana cara mengatasi burnout
+      - saya kelelahan emosional setiap hari
+
+  - intent: krisis_darurat
+    examples: |
+      - saya ingin bunuh diri
+      - saya mau mengakhiri hidup saya
+      - rasanya lebih baik saya mati saja
+      - saya ingin menyakiti diri sendiri
+      - tidak ada gunanya lagi saya hidup
+      - saya berniat untuk gantung diri
+      - saya ingin bunuh diri malam ini
+      - tolong saya ingin menyudahi hidup ini

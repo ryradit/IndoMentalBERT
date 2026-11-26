@@ -1,0 +1,66 @@
+version: "3.1"
+
+intents:
+  - salam:
+      use_entities: []
+  - selamat_tinggal:
+      use_entities: []
+  - terima_kasih:
+      use_entities: []
+  - bot_challenge:
+      use_entities: []
+  - cemas_dan_stres:
+      use_entities: []
+  - depresi_dan_hampa:
+      use_entities: []
+  - tanya_terapi_psikolog:
+      use_entities: []
+  - burnout_kelelahan:
+      use_entities: []
+  - krisis_darurat:
+      use_entities: []
+
+responses:
+  utter_salam:
+    - text: "Halo. Selamat datang di ruang aman untuk berbagi. Bagaimana perasaanmu hari ini?"
+    - text: "Hai, saya di sini untuk mendengarkan. Ada yang sedang membebani pikiranmu saat ini?"
+
+  utter_selamat_tinggal:
+    - text: "Terima kasih sudah meluangkan waktu berbagi. Jaga dirimu baik-baik, dan ingat bantuan selalu tersedia jika kamu membutuhkannya."
+    - text: "Sampai jumpa. Jangan ragu untuk kembali kapan saja jika kamu membutuhkan ruang bercerita."
+
+  utter_terima_kasih:
+    - text: "Sama-sama. Merawat kesehatan mental adalah langkah penting yang patut diapresiasi."
+    - text: "Senang bisa mendengarkanmu. Semoga harimu menjadi lebih ringan dan tenang."
+
+  utter_iamabot:
+    - text: "Saya adalah asisten virtual kesehatan mental IndoMentalBERT. Saya dapat memberikan dukungan awal dan edukasi psikologis, namun saya bukan pengganti diagnosis profesional."
+
+  utter_cemas_dan_stres:
+    - text: "Kecemasan yang berulang bisa terasa sangat melelahkan secara fisik dan mental. Cobalah teknik pernapasan 4-7-8 (tarik napas 4 detik, tahan 7 detik, hembuskan perlahan 8 detik) untuk membantu merilekskan sistem sarafmu. Jika kecemasan ini mulai mengganggu keseharianmu, membicarakannya dengan psikolog sangat disarankan."
+    - text: "Merasa cemas adalah respon alami tubuh saat menghadapi tekanan, tapi kamu tidak harus memikulnya sendiri. Meluangkan waktu istirahat dan berkonsultasi dengan profesional dapat membantumu menemukan strategi koping yang cocok."
+
+  utter_depresi_dan_hampa:
+    - text: "Perasaan hampa, kehilangan minat, atau kelelahan emosional yang panjang adalah tanda bahwa dirimu sedang membutuhkan pertolongan. Kamu berharga, dan perasaan ini bisa dipulihkan. Sangat wajar untuk mencari bantuan psikolog atau psikiater agar kamu mendapatkan pendampingan klinis yang tepat."
+    - text: "Menghadapi hari-hari yang terasa berat dan hampa butuh keberanian besar. Tolong jangan ragu untuk bercerita kepada orang terdekat yang kamu percaya atau menghubungi tenaga kesehatan jiwa profesional."
+
+  utter_tanya_terapi_psikolog:
+    - text: "Terapi bersama psikolog adalah ruang aman tanpa penghakiman untuk memahami emosi, mengurai masalah, dan membangun keterampilan koping. Kamu tidak perlu menunggu sampai kondisi sangat parah untuk pergi ke psikolog. Menjaga kesehatan mental sama pentingnya dengan menjaga kesehatan fisik."
+    - text: "Konsultasi ke psikolog adalah bentuk kepedulian nyata terhadap dirimu sendiri. Kamu bisa mengakses layanan psikolog melalui Puskesmas terdekat, platform telekonseling resmi, atau rumah sakit."
+
+  utter_burnout_kelelahan:
+    - text: "Burnout terjadi ketika energimu terkuras habis akibat stres berkepanjangan tanpa jeda pemulihan yang cukup. Langkah awal yang penting adalah menetapkan batasan yang jelas, berani mengatakan tidak pada beban berlebih, dan memberi dirimu waktu istirahat tanpa rasa bersalah."
+    - text: "Kelelahan mental butuh pemulihan aktif: tidur cukup, mengurangi stimulasi berlebih, dan melakukan aktivitas yang benar-benar memulihkan energimu."
+
+  utter_krisis_darurat:
+    - text: "⚠️ KAMU SANGAT BERHARGA DAN TIDAK SENDIRIAN. Jika kamu merasa ingin menyakiti diri atau mengakhiri hidup, mohon segera hubungi orang terdekat atau layanan darurat kesehatan jiwa sekarang:\n\n• LISA Suicide Prevention Helpline: 119 ext 8 (24 Jam)\n• Hotline Kesehatan Jiwa Kemenkes: 119\n• Layanan Sejiwa: 119 ext 8\n• Kunjungi Instalasi Gawat Darurat (IGD) rumah sakit terdekat.\n\nBantuan profesional siap mendengarkanmu dengan penuh kepedulian."
+
+  utter_default_fallback:
+    - text: "Maaf, saya belum sepenuhnya memahami pesanmu. Bisa tolong ceritakan kembali dengan kalimat lain? Atau apakah kamu ingin mengetahui informasi seputar stres, kecemasan, atau layanan psikolog?"
+
+actions:
+  - action_semantic_qa_retrieval
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
