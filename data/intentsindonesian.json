@@ -128,6 +128,2208 @@
         "Kamu sangat berharga dan tidak sendirian. Mohon segera hubungi orang terdekat atau layanan darurat kesehatan mental Indonesia sekarang juga:\n• LISA Suicide Prevention Helpline: 119 ext 8 (24 jam)\n• Hotline Kesehatan Jiwa Kemenkes: 119\n• Layanan Sejiwa: 119 ext 8\nBantuan profesional siap mendengarkanmu tanpa penghakiman.",
         "Tolong jangan hadapi ini sendirian. Ada pertolongan untuk rasa sakit yang sedang kamu rasakan. Segera hubungi Hotline 119 atau kunjungi Instalasi Gawat Darurat (IGD) rumah sakit terdekat."
       ]
+    },
+    {
+      "tag": "cemas_umum",
+      "patterns": [
+        "Saya merasa cemas terus-menerus tanpa alasan",
+        "Pikiran saya selalu diliputi rasa khawatir",
+        "Kenapa saya mudah gelisah dan was-was",
+        "Kecemasan ini tidak kunjung hilang sepanjang hari"
+      ],
+      "responses": [
+        "Kecemasan menyeluruh sering kali merupakan tanda bahwa sistem sarafmu sedang berada dalam mode waspada tinggi. Cobalah teknik grounding dan pernapasan perlahan. Jika rasa cemas bertahan berminggu-minggu, konsultasi dengan psikolog sangat dianjurkan untuk mengurai akar penyebabnya.",
+        "Wajar merasa lelah saat pikiran terus diliputi kekhawatiran. Ingat bahwa pikiran cemas bukanlah fakta mutlak; izinkan dirimu berhenti sejenak dan tarik napas dalam."
+      ]
+    },
+    {
+      "tag": "cemas_sosial",
+      "patterns": [
+        "Saya sangat takut dihakimi orang lain di tempat umum",
+        "Saya gemetar dan cemas luar biasa saat harus berbicara di depan orang",
+        "Saya menghindari acara sosial karena takut dipermalukan",
+        "Kecemasan sosial membuat saya mengurung diri"
+      ],
+      "responses": [
+        "Kecemasan sosial berakar dari rasa takut mendalam akan penolakan atau penilaian negatif. Terapi perilaku kognitif (CBT) terbukti sangat efektif membantu melatih kembali cara pandangmu terhadap situasi sosial secara bertahap.",
+        "Orang lain umumnya jauh lebih fokus pada diri mereka sendiri daripada yang kita bayangkan. Mulailah dari interaksi kecil yang nyaman tanpa memaksakan diri secara berlebihan."
+      ]
+    },
+    {
+      "tag": "serangan_panik",
+      "patterns": [
+        "Tiba-tiba jantung saya berdegup kencang seperti mau copot",
+        "Saya merasa sesak napas dan takut seperti mau mati",
+        "Saya mengalami panic attack mendadak",
+        "Badan gemetar keringat dingin dan dada sesak karena panik"
+      ],
+      "responses": [
+        "Meskipun serangan panik terasa sangat menakutkan, ingatkan dirimu: 'Ini adalah respon kepanikan tubuh, ini sementara, dan saya aman'. Fokuslah pada hembusan napas panjang dan rasakan kakimu menapak kuat di lantai.",
+        "Serangan panik biasanya mencapai puncak dalam 10 menit lalu mereda perlahan. Minumlah air dingin pelan-pelan dan hubungi bantuan jika gejala fisik tidak kunjung stabil."
+      ]
+    },
+    {
+      "tag": "overthinking_malam",
+      "patterns": [
+        "Setiap malam kepala saya berputar memikirkan masa lalu",
+        "Saya tidak bisa tidur karena otak tidak berhenti berpikir",
+        "Overthinking parah sebelum tidur",
+        "Malam hari selalu dipenuhi penyesalan dan skenario buruk"
+      ],
+      "responses": [
+        "Malam hari adalah saat stimulasi luar mereda, sehingga pikiran cemas sering kali mengambil alih panggung. Cobalah teknik 'brain dump': tuliskan semua isi kepalamu di atas kertas sebelum tidur agar otakmu tahu hal itu sudah dicatat.",
+        "Katakan pada dirimu: 'Saya tidak bisa menyelesaikan masalah hidup saya pukul 1 malam. Saat ini tugas utama saya adalah beristirahat'."
+      ]
+    },
+    {
+      "tag": "agorafobia",
+      "patterns": [
+        "Saya takut keluar rumah atau berada di tempat terbuka",
+        "Saya merasa tidak aman jika jauh dari rumah",
+        "Takut berada di keramaian karena tidak bisa melarikan diri"
+      ],
+      "responses": [
+        "Agorafobia sering berkaitan dengan rasa takut mengalami serangan panik di tempat yang sulit ditinggalkan. Terapi desensitisasi bertahap bersama psikolog dapat membantumu memperluas zona nyamanmu secara aman."
+      ]
+    },
+    {
+      "tag": "cemas_kesehatan_hipokondria",
+      "patterns": [
+        "Saya selalu mencari gejala penyakit di Google dan panik",
+        "Saya yakin saya mengidap penyakit parah meski dokter bilang normal",
+        "Takut terkena penyakit mematikan setiap merasakan sensasi tubuh"
+      ],
+      "responses": [
+        "Kecemasan kesehatan (health anxiety) memperbesar sensasi fisik normal menjadi ancaman besar. Hindari mencari diagnosis mandiri di internet karena algoritma pencarian cenderung memperparah kepanikan."
+      ]
+    },
+    {
+      "tag": "cemas_masa_depan",
+      "patterns": [
+        "Saya takut masa depan saya hancur dan gagal",
+        "Kecemasan tentang hari esok membuat saya tidak bisa menikmati hari ini",
+        "Bagaimana jika saya tidak pernah berhasil di masa depan"
+      ],
+      "responses": [
+        "Masa depan dibangun dari langkah-langkah kecil hari ini, bukan dari kekhawatiran yang kamu putar di kepala. Fokuskan energimu pada satu tindakan nyata yang bisa kamu kendalikan saat ini."
+      ]
+    },
+    {
+      "tag": "cemas_finansial",
+      "patterns": [
+        "Saya stres berat memikirkan uang dan utang",
+        "Kecemasan masalah ekonomi membuat saya sakit kepala",
+        "Takut tidak bisa memenuhi kebutuhan hidup"
+      ],
+      "responses": [
+        "Kecemasan finansial adalah salah satu pemicu stres paling nyata dan berat. Mengurai masalah menjadi anggaran tertulis dan mencari dukungan konsultasi keuangan atau bantuan sosial dapat membantu mengurangi beban mental."
+      ]
+    },
+    {
+      "tag": "cemas_akademik",
+      "patterns": [
+        "Saya sangat cemas dengan nilai dan skripsi saya",
+        "Takut tidak lulus dan mengecewakan orang tua",
+        "Stres menghadapi ujian sampai mual"
+      ],
+      "responses": [
+        "Nilai akademik adalah ukuran performa pada tugas tertentu, bukan ukuran nilai dirimu sebagai manusia. Pecah tugas besar menjadi bagian-bagian kecil 25 menit (teknik Pomodoro) agar tidak terasa luar biasa berat."
+      ]
+    },
+    {
+      "tag": "fobia_spesifik",
+      "patterns": [
+        "Saya memiliki ketakutan ekstrem terhadap hal tertentu",
+        "Fobia saya mulai mengganggu kehidupan sehari-hari",
+        "Ketakutan yang tidak rasional tapi sangat nyata bagi saya"
+      ],
+      "responses": [
+        "Fobia spesifik sangat umum dan sangat bisa ditangani melalui terapi paparan (exposure therapy) yang dipandu secara bertahap oleh psikolog profesional."
+      ]
+    },
+    {
+      "tag": "kecemasan_presentasi",
+      "patterns": [
+        "Saya blank dan gemetar hebat saat harus presentasi",
+        "Bicara di depan umum membuat perut saya mulas dan suara bergetar",
+        "Kecemasan performa saat berbicara di depan publik"
+      ],
+      "responses": [
+        "Sensasi fisik seperti jantung berdebar sebelum presentasi adalah adrenalin alami tubuh. Alih-alih melawannya, salurkan energi itu sebagai fokus, dan siapkan catatan kecil sebagai jangkar ketenanganmu."
+      ]
+    },
+    {
+      "tag": "takut_dihakimi",
+      "patterns": [
+        "Saya selalu merasa orang lain sedang membicarakan kelemahan saya",
+        "Takut dihakimi dan dikritik membuat saya pasif",
+        "Saya merasa semua mata tertuju pada kesalahan saya"
+      ],
+      "responses": [
+        "Fenomena ini dikenal sebagai 'spotlight effect': kita cenderung melebih-lebihkan seberapa banyak perhatian orang lain tertuju pada kita. Kenyataannya, setiap orang sibuk dengan kekhawatiran mereka sendiri."
+      ]
+    },
+    {
+      "tag": "takut_kegagalan_atychiphobia",
+      "patterns": [
+        "Lebih baik saya tidak mencoba daripada harus gagal",
+        "Rasa takut gagal membuat saya tidak berani melangkah",
+        "Saya sangat takut membuat kesalahan kecil"
+      ],
+      "responses": [
+        "Kegagalan adalah data dan proses belajar, bukan vonis atas harga dirimu. Orang yang tidak pernah gagal adalah orang yang tidak pernah mencoba hal baru."
+      ]
+    },
+    {
+      "tag": "ocd_kontaminasi",
+      "patterns": [
+        "Saya mencuci tangan berulang kali sampai lecet karena takut kuman",
+        "Saya merasa tidak tenang jika belum membersihkan barang berkali-kali",
+        "Dorongan membersihkan sesuatu yang tidak bisa saya tahan"
+      ],
+      "responses": [
+        "Kompulsi kebersihan pada OCD adalah upaya meredakan kecemasan pikiran obsesif. Terapi Exposure and Response Prevention (ERP) adalah standar emas yang efektif untuk memutus siklus ini."
+      ]
+    },
+    {
+      "tag": "ocd_pikiran_intrusif",
+      "patterns": [
+        "Pikiran buruk dan menjijikkan tiba-tiba muncul di kepala saya tanpa saya inginkan",
+        "Saya takut pikiran terlarang saya mencerminkan siapa saya sebenarnya",
+        "Pikiran jahat yang terus mengganggu dan membuat saya merasa bersalah"
+      ],
+      "responses": [
+        "Pikiran intrusif adalah sampah mental acak yang dihasilkan otak, BUKAN cerminan dari karakter atau niat aslimu. Semakin kamu melawannya, semakin kuat ia bertahan; biarkan ia lewat seperti awan tanpa memberi penghakiman."
+      ]
+    },
+    {
+      "tag": "ocd_pengecekan",
+      "patterns": [
+        "Saya bolak-balik memeriksa pintu dan kompor puluhan kali",
+        "Saya tidak bisa keluar rumah karena ragu apakah sudah mengunci pintu",
+        "Pengecekan berulang yang menghabiskan waktu saya"
+      ],
+      "responses": [
+        "Keraguan berulang pada OCD memicu kebutuhan kepastian semu. Melatih diri untuk menunda pengecekan selama beberapa menit dapat membantu melatih toleransi terhadap ketidakpastian."
+      ]
+    },
+    {
+      "tag": "sesak_napas_karena_cemas",
+      "patterns": [
+        "Dada saya sesak dan sulit menarik napas penuh saat cemas",
+        "Merasa seperti kekurangan oksigen padahal tidak batuk",
+        "Sesak napas saat stres pikiran"
+      ],
+      "responses": [
+        "Saat cemas, tubuh sering melakukan pernapasan dangkal dari dada atas (hiperventilasi). Letakkan satu tangan di perut, tarik napas melalui hidung dan dorong tanganmu keluar, lalu hembuskan perlahan."
+      ]
+    },
+    {
+      "tag": "jantung_berdebar_palpitasi",
+      "patterns": [
+        "Jantung saya berdegup kencang tanpa aktivitas fisik",
+        "Denyut jantung cepat membuat saya makin panik",
+        "Sensasi berdebar-debar karena cemas"
+      ],
+      "responses": [
+        "Palpitasi akibat kecemasan dipicu pelepasan adrenalin alami. Begitu otak menyadari tidak ada ancaman nyata, sistem saraf parasimpatis akan memperlambat detak jantung kembali normal."
+      ]
+    },
+    {
+      "tag": "gemetar_panik",
+      "patterns": [
+        "Tangan dan kaki saya gemetar hebat saat takut",
+        "Tubuh saya menggigil saat menghadapi tekanan",
+        "Gemetar tidak terkendali karena panik"
+      ],
+      "responses": [
+        "Tubuh melepaskan energi ketegangan melalui getaran otot. Minumlah air hangat dan lakukan peregangan otot perlahan untuk memberi sinyal relaksasi ke otak."
+      ]
+    },
+    {
+      "tag": "claustrophobia_ruang_sempit",
+      "patterns": [
+        "Saya panik berada di lift atau ruangan sempit",
+        "Merasa tercekik saat berada di tempat tertutup",
+        "Takut berada di ruang tanpa jendela"
+      ],
+      "responses": [
+        "Klaustrofobia memicu respon klaustro-panik. Latihan fokus visual pada satu titik stabil dan membawa aroma yang menenangkan dapat membantu meregulasi respon panik."
+      ]
+    },
+    {
+      "tag": "depresi_mayor",
+      "patterns": [
+        "Saya merasa hidup ini tidak ada artinya lagi",
+        "Rasa sedih yang sangat mendalam dan tidak pernah hilang",
+        "Saya kehilangan minat pada semua hal yang dulu saya sukai",
+        "Hari-hari saya terasa gelap dan hampa"
+      ],
+      "responses": [
+        "Depresi adalah kondisi medis dan neurokimia nyata yang dapat diobati, bukan kelemahan iman atau karakter. Kombinasi psikoterapi dan pendampingan psikiater telah membantu jutaan orang pulih kembali.",
+        "Perasaan hampa ini adalah beban yang terlalu berat untuk dipikul sendirian. Langkah paling berani yang bisa kamu ambil hari ini adalah menjangkau profesional kesehatan jiwa."
+      ]
+    },
+    {
+      "tag": "anhedonia_kehilangan_minat",
+      "patterns": [
+        "Tidak ada hal yang bisa membuat saya bahagia atau tertawa lagi",
+        "Hobi makanan dan film terasa hambar",
+        "Saya mati rasa dan tidak merasakan emosi apa pun"
+      ],
+      "responses": [
+        "Anhedonia adalah gejala umum depresi di mana sistem penghargaan di otak sedang mengalami penurunan respons. Beri dirimu izin untuk tidak merasa senang dulu, namun tetap lakukan rutinitas kecil yang merawat fisikmu."
+      ]
+    },
+    {
+      "tag": "apatis_tanpa_motivasi",
+      "patterns": [
+        "Saya tidak punya tenaga untuk bangun dari tempat tidur",
+        "Semua hal terasa sia-sia dan melelahkan",
+        "Saya kehilangan dorongan dan motivasi untuk beraktivitas"
+      ],
+      "responses": [
+        "Motivasi sering kali baru muncul setelah tindakan dimulai, bukan sebelumnya. Terapkan 'aturan 2 menit': lakukan satu hal sangat sederhana (seperti mencuci muka atau minum air) tanpa menuntut hasil sempurna."
+      ]
+    },
+    {
+      "tag": "sedih_berkepanjangan",
+      "patterns": [
+        "Sudah berminggu-minggu saya merasa murung terus",
+        "Kesedihan ini menetap dan tidak mau pergi",
+        "Merasa berduka tanpa tahu apa yang hilang"
+      ],
+      "responses": [
+        "Kesedihan normal biasanya naik dan turun, namun jika menetap konstan lebih dari dua minggu dan mengganggu aktivitas, itu adalah tanda klinis untuk berkonsultasi dengan psikolog."
+      ]
+    },
+    {
+      "tag": "smiling_depression",
+      "patterns": [
+        "Di luar saya tampak ceria dan sukses tapi di dalam saya hancur",
+        "Saya berpura-pura bahagia di depan orang lain padahal menangis sendirian",
+        "Tidak ada yang tahu saya sedang mengalami depresi berat"
+      ],
+      "responses": [
+        "'Smiling depression' sangat melelahkan karena energi habis dipakai mempertahankan topeng keceriaan. Memiliki satu ruang aman—seperti ruang terapi bersama profesional—di mana kamu bisa melepas topeng itu akan sangat melegakan."
+      ]
+    },
+    {
+      "tag": "bipolar_fase_mania",
+      "patterns": [
+        "Saya merasa sangat berenergi tidak butuh tidur dan belanja impulsif",
+        "Pikiran saya melompat-lompat sangat cepat dan merasa tak terkalahkan",
+        "Episode euforia ekstrem yang tidak terkendali"
+      ],
+      "responses": [
+        "Fase mania atau hipomania pada gangguan bipolar membutuhkan evaluasi cermat oleh psikiater untuk menstabilkan neurotransmitter melalui terapi farmakologi yang tepat."
+      ]
+    },
+    {
+      "tag": "bipolar_fase_depresi",
+      "patterns": [
+        "Setelah berenergi tinggi tiba-tiba saya jatuh ke jurang depresi yang dalam",
+        "Perubahan mood yang sangat drastis dari senang ke terpuruk",
+        "Fase depresi bipolar yang membuat saya tidak berdaya"
+      ],
+      "responses": [
+        "Transisi ekstrem pada bipolar sangat menguras fisik dan emosional. Konsistensi minum obat penstabil suasana hati sesuai anjuran psikiater adalah kunci utama pencegahan episode kambuh."
+      ]
+    },
+    {
+      "tag": "distimia_depresi_kronis",
+      "patterns": [
+        "Sudah bertahun-tahun saya merasa suram dan datar",
+        "Merasa tidak pernah benar-benar bahagia sejak lama",
+        "Depresi tingkat rendah yang berlangsung lama"
+      ],
+      "responses": [
+        "Distimia (gangguan depresi persisten) sering dianggap sebagai 'bagian kepribadian' padahal ini kondisi yang bisa dipulihkan melalui psikoterapi jangka panjang."
+      ]
+    },
+    {
+      "tag": "depresi_musiman_sad",
+      "patterns": [
+        "Mood saya selalu memburuk saat cuaca mendung atau musim hujan",
+        "Merasa lesu dan ingin tidur terus di musim dingin/hujan",
+        "Depresi yang terikat perubahan musim"
+      ],
+      "responses": [
+        "Seasonal Affective Disorder berkaitan erat dengan paparan cahaya matahari dan ritme sirkadian tubuh. Terapi cahaya dan aktivitas luar ruangan di pagi hari dapat sangat membantu."
+      ]
+    },
+    {
+      "tag": "postpartum_depression",
+      "patterns": [
+        "Setelah melahirkan saya merasa hampa dan tidak terikat dengan bayi saya",
+        "Rasa sedih luar biasa dan bersalah menjadi ibu baru",
+        "Depresi pasca melahirkan yang membuat saya menangis terus"
+      ],
+      "responses": [
+        "Depresi postpartum dipicu perubahan hormonal drastis dan kelelahan luar biasa. Ini BUKAN tanda kamu ibu yang buruk; segera bicarakan dengan dokter kandungan atau psikolog agar kamu mendapat dukungan pemulihan."
+      ]
+    },
+    {
+      "tag": "merasa_tidak_berguna",
+      "patterns": [
+        "Saya merasa menjadi beban bagi keluarga dan orang lain",
+        "Saya merasa tidak punya nilai dan tidak berharga",
+        "Keberadaan saya hanya menyusahkan orang di sekitar saya"
+      ],
+      "responses": [
+        "Pikiran bahwa kamu adalah beban adalah distorsi kognitif yang diciptakan oleh depresi, bukan kenyataan obyektif. Keberadaanmu berharga terlepas dari seberapa produktif dirimu hari ini."
+      ]
+    },
+    {
+      "tag": "rasa_bersalah_toksik",
+      "patterns": [
+        "Saya selalu menyalahkan diri sendiri atas segala hal yang salah",
+        "Rasa bersalah yang menggerogoti saya setiap waktu",
+        "Merasa berdosa dan tidak pantas diampuni"
+      ],
+      "responses": [
+        "Membedakan antara tanggung jawab yang sehat dan rasa bersalah toksik adalah bagian penting dari terapi. Kamu tidak bertanggung jawab atas semua hal di luar kendalimu."
+      ]
+    },
+    {
+      "tag": "menangis_tanpa_sebab",
+      "patterns": [
+        "Saya tiba-tiba menangis tersedu-sedu tanpa alasan yang jelas",
+        "Air mata saya menetes sendiri saat sedang diam",
+        "Kenapa saya jadi sangat cengeng dan rapuh akhir-akhir ini"
+      ],
+      "responses": [
+        "Menangis adalah mekanisme alami tubuh untuk melepaskan hormon stres dan ketegangan emosional yang tertumpuk di bawah sadar. Jangan menahannya; biarkan emosimu mengalir dengan aman."
+      ]
+    },
+    {
+      "tag": "menarik_diri_isolasi",
+      "patterns": [
+        "Saya tidak mau membalas pesan siapa pun dan mengurung diri",
+        "Saya menghindari kontak dengan teman dan keluarga",
+        "Merasa tidak punya energi sosial untuk berinteraksi"
+      ],
+      "responses": [
+        "Isolasi sering kali terasa nyaman sesaat, namun jika terlalu lama dapat memperdalam siklus depresi. Cobalah tetap terhubung melalui pesan singkat sederhana dengan satu orang yang kamu percayai."
+      ]
+    },
+    {
+      "tag": "kelelahan_emosional",
+      "patterns": [
+        "Batin saya terasa sangat lelah dan habis",
+        "Secara emosional saya tidak punya kapasitas apa-apa lagi",
+        "Kelelahan jiwa yang tidak hilang meski sudah tidur"
+      ],
+      "responses": [
+        "Kelelahan batin tidak bisa disembuhkan hanya dengan tidur fisik; ia butuh istirahat emosional: berhenti menyenangkan orang lain, melepaskan ekspektasi, dan merawat diri dengan welas asih."
+      ]
+    },
+    {
+      "tag": "kehilangan_tujuan_hidup",
+      "patterns": [
+        "Saya tidak tahu untuk apa saya hidup lagi",
+        "Semua pencapaian terasa hampa dan tidak berarti",
+        "Saya bingung arah dan tujuan hidup saya"
+      ],
+      "responses": [
+        "Kehilangan tujuan sering kali merupakan undangan untuk menilai kembali apa yang benar-benar bermakna bagimu, bukan apa yang dituntut oleh lingkungan sekitarmu."
+      ]
+    },
+    {
+      "tag": "rasa_sepi_mendalam",
+      "patterns": [
+        "Saya merasa sangat sendirian di dunia ini",
+        "Meskipun ada di keramaian saya merasa sangat kesepian",
+        "Tidak ada seorang pun yang benar-benar mengenal saya"
+      ],
+      "responses": [
+        "Kesepian bukan tentang berapa banyak orang di sekitarmu, melainkan tentang kualitas koneksi yang dirasakan. Hubungan yang otentik dimulai dari keberanian membuka diri secara perlahan."
+      ]
+    },
+    {
+      "tag": "self_criticism_kejam",
+      "patterns": [
+        "Suara di kepala saya selalu menghina dan meremehkan saya",
+        "Saya adalah musuh terbesar bagi diri saya sendiri",
+        "Saya selalu mengutuk diri saat membuat kesalahan kecil"
+      ],
+      "responses": [
+        "Tanyakan pada dirimu: 'Apakah saya akan berbicara sekasar ini kepada sahabat terbaik saya yang sedang kesulitan?' Jika tidak, mengapa kamu memperlakukan dirimu lebih buruk?"
+      ]
+    },
+    {
+      "tag": "mati_rasa_emosi",
+      "patterns": [
+        "Saya tidak bisa sedih dan tidak bisa bahagia",
+        "Hati saya seperti membeku dan hampa",
+        "Mati rasa secara total terhadap perasaan"
+      ],
+      "responses": [
+        "Emotional numbness sering kali merupakan mekanisme pertahanan bawah sadar untuk melindungi diri dari rasa sakit yang terlalu intens. Memulihkannya membutuhkan ruang aman bersama terapis."
+      ]
+    },
+    {
+      "tag": "depresi_pada_remaja",
+      "patterns": [
+        "Orang tua saya bilang saya hanya malas padahal saya depresi",
+        "Stres masa remaja yang membuat saya ingin menghilang",
+        "Tekanan sekolah dan sosial yang membuat depresi"
+      ],
+      "responses": [
+        "Perasaanmu valid dan nyata. Depresi pada usia muda bukanlah kemalasan, melainkan beban nyata yang membutuhkan pemahaman dan dukungan profesional."
+      ]
+    },
+    {
+      "tag": "burnout_kerja",
+      "patterns": [
+        "Saya sangat burnout dengan pekerjaan saya",
+        "Setiap hari minggu malam saya mual memikirkan hari senin",
+        "Saya muak dan tidak berenergi untuk bekerja lagi",
+        "Tekanan kantor membuat fisik dan psikologis saya hancur"
+      ],
+      "responses": [
+        "Burnout adalah kondisi kelelahan fisik, emosional, dan mental akibat stres kronis di tempat kerja. Langkah utama mengatasinya adalah menetapkan batasan beban kerja yang jelas dan mengambil jeda pemulihan tanpa rasa bersalah.",
+        "Tubuhmu sedang memberi sinyal darurat bahwa ritme kerjamu saat ini tidak berkelanjutan. Menjaga kesehatan jiwamu jauh lebih penting daripada produktivitas kantor semata."
+      ]
+    },
+    {
+      "tag": "imposter_syndrome",
+      "patterns": [
+        "Saya merasa seperti penipu dan tidak pantas mendapatkan posisi saya",
+        "Semua kesuksesan saya hanyalah karena faktor keberuntungan",
+        "Saya selalu takut orang lain tahu bahwa saya sebenarnya bodoh"
+      ],
+      "responses": [
+        "Sindrom imposter sangat umum dialami orang-orang yang berprestasi tinggi. Buatlah catatan fakta tentang kerja keras dan kompetensi nyatamu, bukan sekadar mendengarkan bisikan rasa ragu di kepala."
+      ]
+    },
+    {
+      "tag": "toxic_workplace",
+      "patterns": [
+        "Lingkungan kantor saya sangat manipulatif dan penuh gosip",
+        "Tempat kerja saya tidak sehat secara mental",
+        "Budaya kerja lembur tanpa henti membuat saya gila"
+      ],
+      "responses": [
+        "Lingkungan kerja yang toksik dapat merusak kesehatan fisik dan mental secara perlahan. Fokuskan energimu pada hal-hal yang dapat kamu kontrol dan mulailah merancang strategi keluar yang aman."
+      ]
+    },
+    {
+      "tag": "bos_toksik_bullying",
+      "patterns": [
+        "Atasan saya sering membentak dan mempermalukan saya",
+        "Bos saya narsistik dan selalu menyalahkan bawahan",
+        "Saya mengalami perundungan dari manajer di kantor"
+      ],
+      "responses": [
+        "Perilaku kasar dari atasan adalah cerminan dari ketidakmampuan manajerial dan kepribadiannya, bukan ukuran kompetensimu. Dokumentasikan perlakuan tidak adil dan jaga batasan emosional yang ketat."
+      ]
+    },
+    {
+      "tag": "boundary_menolak_beban_kerja",
+      "patterns": [
+        "Saya tidak bisa menolak pekerjaan tambahan meski sudah overwork",
+        "Takut dinilai malas jika pulang tepat waktu",
+        "Bagaimana cara menetapkan batasan sehat di kantor"
+      ],
+      "responses": [
+        "Menetapkan batasan profesional adalah bentuk tanggung jawab kerja agar kualitas hasilmu tetap prima. Berlatihlah mengatakan: 'Kapasitas saya saat ini penuh untuk prioritas A, jika ada tugas baru, mana yang perlu digeser?'."
+      ]
+    },
+    {
+      "tag": "prokrastinasi_cemas",
+      "patterns": [
+        "Saya menunda-nunda pekerjaan sampai mepet deadline",
+        "Bukan malas tapi saya terlalu cemas untuk memulai pekerjaan",
+        "Kebiasaan menunda tugas yang membuat stres berat"
+      ],
+      "responses": [
+        "Prokrastinasi sering kali berakar dari kecemasan dan perfeksionisme, bukan kemalasan. Turunkan ekspektasi awal: buatlah draft yang tidak sempurna terlebih dahulu selama 10 menit pertama."
+      ]
+    },
+    {
+      "tag": "perfeksionisme_lumpuh",
+      "patterns": [
+        "Jika tidak bisa sempurna lebih baik tidak saya kerjakan sama sekali",
+        "Standar tinggi yang menyiksa diri sendiri",
+        "Saya tersiksa karena selalu menuntut kesempurnaan"
+      ],
+      "responses": [
+        "Perfeksionisme adalah tameng pelindung dari rasa takut dikritik. Ganti moto hidupmu menjadi: 'Selesai dan cukup baik lebih bermakna daripada sempurna tapi tidak pernah terwujud'."
+      ]
+    },
+    {
+      "tag": "workaholic_kompulsif",
+      "patterns": [
+        "Saya merasa cemas dan bersalah jika sedang santai atau libur",
+        "Hidup saya hanya untuk bekerja dan tidak punya hobi",
+        "Kecanduan kerja sampai mengabaikan kesehatan"
+      ],
+      "responses": [
+        "Bekerja tanpa henti sering dijadikan mekanisme pelarian dari masalah emosional lain. Istirahat bukanlah hadiah setelah selesai bekerja, melainkan kebutuhan biologis yang mutlak."
+      ]
+    },
+    {
+      "tag": "wawancara_kerja_cemas",
+      "patterns": [
+        "Saya sangat panik menghadapi interview kerja besok",
+        "Gemetar dan lupa semua jawaban saat wawancara",
+        "Kecemasan menghadapi proses rekrutmen kerja"
+      ],
+      "responses": [
+        "Ingat bahwa wawancara kerja adalah percakapan dua arah untuk melihat kecocokan bersama, bukan interogasi satu arah. Lakukan latihan pernapasan diafragma 15 menit sebelum wawancara dimulai."
+      ]
+    },
+    {
+      "tag": "kehilangan_pekerjaan_phk",
+      "patterns": [
+        "Saya baru saja terkena PHK dan merasa dunia runtuh",
+        "Kehilangan pekerjaan membuat saya merasa gagal dan panik finansial",
+        "Stres berat setelah diberhentikan dari kantor"
+      ],
+      "responses": [
+        "Kehilangan pekerjaan adalah peristiwa duka yang sangat berat. Beri dirimu ruang untuk berduka sebelum terburu-buru menghakimi masa depanmu; nilaimu sebagai manusia tidak berkurang karena kehilangan status pekerjaan."
+      ]
+    },
+    {
+      "tag": "stres_skripsi_kuliah",
+      "patterns": [
+        "Saya buntu skripsi berbulan-bulan dan merasa putus asa",
+        "Dosen pembimbing killer membuat saya trauma bimbingan",
+        "Stres tugas akhir sampai ingin drop out"
+      ],
+      "responses": [
+        "Kebuntuan skripsi adalah hal yang sangat lazim dialami mahasiswa. Buatlah target mikroskopis: menulis satu paragraf per hari, dan jangan ragu mencari bimbingan sebaya atau konseling kampus."
+      ]
+    },
+    {
+      "tag": "stres_deadline_proyek",
+      "patterns": [
+        "Banyak deadline menumpuk membuat kepala saya mau pecah",
+        "Kepanikan menghadapi tenggat waktu proyek yang bersamaan",
+        "Kewalahan dengan beban tugas yang sangat banyak"
+      ],
+      "responses": [
+        "Terapkan matriks Eisenhower: kelompokkan tugas menjadi mendesak-penting, lalu selesaikan satu per satu secara berurutan. Otak manusia tidak dirancang untuk multitasking di bawah tekanan tinggi."
+      ]
+    },
+    {
+      "tag": "career_switch_kebingungan",
+      "patterns": [
+        "Saya ingin pindah jalur karir tapi sangat takut gagal",
+        "Merasa salah jurusan dan salah pekerjaan seumur hidup",
+        "Kebingungan menentukan arah karir baru"
+      ],
+      "responses": [
+        "Eksplorasi karir adalah proses seumur hidup. Keterampilan yang kamu bangun di bidang sebelumnya (transferable skills) tetap akan berguna di perjalanan barumu."
+      ]
+    },
+    {
+      "tag": "creative_block_kelelahan",
+      "patterns": [
+        "Ide kreatif saya buntu total dan tidak bisa berkarya",
+        "Kelelahan kreatif membuat saya merasa tidak berbakat lagi",
+        "Tekanan menghasilkan karya kreatif"
+      ],
+      "responses": [
+        "Kreativitas membutuhkan input santai sebelum bisa menghasilkan output. Menjauhlah dari meja kerjamu, berjalanlah di alam, atau konsumsi karya orang lain tanpa niat menganalisisnya."
+      ]
+    },
+    {
+      "tag": "komparasi_media_sosial",
+      "patterns": [
+        "Melihat kesuksesan orang di LinkedIn dan Instagram membuat saya minder",
+        "Saya merasa sangat tertinggal dibanding teman sebaya",
+        "Stres karena membandingkan hidup saya dengan orang lain"
+      ],
+      "responses": [
+        "Media sosial adalah etalase sorotan terbaik orang lain, bukan rekaman kehidupan nyata mereka di balik layar. Batasi waktu layarmu dan fokuslah pada pertumbuhan jalur pribadimu sendiri."
+      ]
+    },
+    {
+      "tag": "fomo_fear_of_missing_out",
+      "patterns": [
+        "Saya selalu takut ketinggalan tren atau acara penting",
+        "Kecemasan FOMO membuat saya tidak bisa istirahat",
+        "Merasa harus selalu update dan ikut serta"
+      ],
+      "responses": [
+        "Berlatihlah mengubah FOMO menjadi JOMO (Joy of Missing Out): kelegaan dan kedamaian memilih untuk tidak terlibat dalam hiruk-pikuk yang menguras energi batinmu."
+      ]
+    },
+    {
+      "tag": "screen_time_kelelahan",
+      "patterns": [
+        "Mata dan kepala saya lelah karena menatap layar 12 jam sehari",
+        "Kelelahan digital yang membuat pikiran tumpul",
+        "Ketergantungan gawai yang merusak kesehatan mental"
+      ],
+      "responses": [
+        "Terapkan aturan 20-20-20: setiap 20 menit menatap layar, pandanglah objek berjarak 20 kaki (6 meter) selama 20 detik untuk mengistirahatkan saraf mata dan otak."
+      ]
+    },
+    {
+      "tag": "work_life_balance_rusak",
+      "patterns": [
+        "Pekerjaan menyita akhir pekan dan waktu keluarga saya",
+        "Saya tidak punya batasan antara jam kerja dan jam istirahat",
+        "Pekerjaan mengambil alih seluruh hidup saya"
+      ],
+      "responses": [
+        "Jika kamu tidak menetapkan batasan untuk hidupmu, orang lain yang akan menentukannya untukmu. Buatlah ritual penutup jam kerja yang tegas setiap harinya."
+      ]
+    },
+    {
+      "tag": "quarter_life_crisis",
+      "patterns": [
+        "Di usia 20-an ini saya merasa tersesat dan bingung arah",
+        "Krisis seperempat abad yang membuat cemas setiap hari",
+        "Merasa belum mencapai apa-apa di usia dewasa muda"
+      ],
+      "responses": [
+        "Quarter-life crisis adalah tahap transisi perkembangan yang wajar saat kita menyelaraskan harapan masa kecil dengan kenyataan kedewasaan. Kamu sedang berproses, bukan sedang gagal."
+      ]
+    },
+    {
+      "tag": "kebingungan_finansial_sandwich_generation",
+      "patterns": [
+        "Saya generasi sandwich yang harus menanggung orang tua dan adik",
+        "Beban finansial keluarga membuat mental saya remuk",
+        "Stres menjadi tulang punggung keluarga"
+      ],
+      "responses": [
+        "Menjadi generasi sandwich adalah beban yang sangat berat dan melelahkan. Berkomunikasi secara jujur mengenai batas kemampuan finansialmu adalah langkah perlindungan agar kamu tidak kolaps bersama."
+      ]
+    },
+    {
+      "tag": "ptsd_trauma_akut",
+      "patterns": [
+        "flashback trauma masa lalu",
+        "teringat kejadian traumatis membuat panik",
+        "gejala stres pascatrauma"
+      ],
+      "responses": [
+        "PTSD dan trauma mendalam adalah tantangan yang nyata dan sangat wajar dirasakan. Langkah awal yang baik adalah mengenali pemicunya, mempraktikkan regulasi diri perlahan, dan tidak ragu mencari pendampingan profesional.",
+        "Mengalami situasi terkait ptsd dan trauma mendalam membutuhkan kesabaran dan kelembutan pada diri sendiri. Prioritaskan ruang pemulihanmu dan bicarakan dengan orang terpercaya."
+      ]
+    },
+    {
+      "tag": "cptsd_trauma_kompleks",
+      "patterns": [
+        "luka batin inner child",
+        "pengabaian emosional orang tua masa kecil",
+        "trauma kompleks bertahun-tahun"
+      ],
+      "responses": [
+        "Trauma masa kecil berkepanjangan adalah tantangan yang nyata dan sangat wajar dirasakan. Langkah awal yang baik adalah mengenali pemicunya, mempraktikkan regulasi diri perlahan, dan tidak ragu mencari pendampingan profesional.",
+        "Mengalami situasi terkait trauma masa kecil berkepanjangan membutuhkan kesabaran dan kelembutan pada diri sendiri. Prioritaskan ruang pemulihanmu dan bicarakan dengan orang terpercaya."
+      ]
+    },
+    {
+      "tag": "gaslighting_pemulihan",
+      "patterns": [
+        "saya dibuat merasa gila oleh pasangan",
+        "meragukan kewarasan sendiri karena manipulasi",
+        "pemulihan dari korban gaslighting"
+      ],
+      "responses": [
+        "Pemulihan dari manipulasi gaslighting adalah tantangan yang nyata dan sangat wajar dirasakan. Langkah awal yang baik adalah mengenali pemicunya, mempraktikkan regulasi diri perlahan, dan tidak ragu mencari pendampingan profesional.",
+        "Mengalami situasi terkait pemulihan dari manipulasi gaslighting membutuhkan kesabaran dan kelembutan pada diri sendiri. Prioritaskan ruang pemulihanmu dan bicarakan dengan orang terpercaya."
+      ]
+    },
+    {
+      "tag": "kekerasan_emosional",
+      "patterns": [
+        "sering dihina dan direndahkan pasangan",
+        "kekerasan emosional dalam hubungan",
+        "luka batin akibat bentakan"
+      ],
+      "responses": [
+        "Kekerasan psikologis dan verbal adalah tantangan yang nyata dan sangat wajar dirasakan. Langkah awal yang baik adalah mengenali pemicunya, mempraktikkan regulasi diri perlahan, dan tidak ragu mencari pendampingan profesional.",
+        "Mengalami situasi terkait kekerasan psikologis dan verbal membutuhkan kesabaran dan kelembutan pada diri sendiri. Prioritaskan ruang pemulihanmu dan bicarakan dengan orang terpercaya."
+      ]
+    },
+    {
+      "tag": "trauma_perselingkuhan",
+      "patterns": [
+        "dikhianati pasangan membuat sulit percaya orang lagi",
+        "trauma diselingkuhi membuat cemas parah",
+        "hancur karena pasangan mendua"
+      ],
+      "responses": [
+        "Trauma dikhianati dan perselingkuhan adalah tantangan yang nyata dan sangat wajar dirasakan. Langkah awal yang baik adalah mengenali pemicunya, mempraktikkan regulasi diri perlahan, dan tidak ragu mencari pendampingan profesional.",
+        "Mengalami situasi terkait trauma dikhianati dan perselingkuhan membutuhkan kesabaran dan kelembutan pada diri sendiri. Prioritaskan ruang pemulihanmu dan bicarakan dengan orang terpercaya."
+      ]
+    },
+    {
+      "tag": "patah_hati_putus_cinta",
+      "patterns": [
+        "sulit move on dari mantan",
+        "rasa sakit luar biasa setelah putus cinta",
+        "patah hati membuat saya tidak bisa makan"
+      ],
+      "responses": [
+        "Patah hati dan duka putus cinta adalah tantangan yang nyata dan sangat wajar dirasakan. Langkah awal yang baik adalah mengenali pemicunya, mempraktikkan regulasi diri perlahan, dan tidak ragu mencari pendampingan profesional.",
+        "Mengalami situasi terkait patah hati dan duka putus cinta membutuhkan kesabaran dan kelembutan pada diri sendiri. Prioritaskan ruang pemulihanmu dan bicarakan dengan orang terpercaya."
+      ]
+    },
+    {
+      "tag": "hubungan_toksik",
+      "patterns": [
+        "tahu toxic tapi sulit sekali lepas",
+        "hubungan yang merusak mental saya",
+        "kecanduan hubungan yang menyakitkan"
+      ],
+      "responses": [
+        "Terjebak dalam hubungan beracun adalah tantangan yang nyata dan sangat wajar dirasakan. Langkah awal yang baik adalah mengenali pemicunya, mempraktikkan regulasi diri perlahan, dan tidak ragu mencari pendampingan profesional.",
+        "Mengalami situasi terkait terjebak dalam hubungan beracun membutuhkan kesabaran dan kelembutan pada diri sendiri. Prioritaskan ruang pemulihanmu dan bicarakan dengan orang terpercaya."
+      ]
+    },
+    {
+      "tag": "people_pleasing",
+      "patterns": [
+        "selalu menyenangkan orang lain demi diterima",
+        "takut menolak permintaan orang lain",
+        "kehilangan jati diri karena menyenangkan orang"
+      ],
+      "responses": [
+        "Kebiasaan sulit berkata tidak adalah tantangan yang nyata dan sangat wajar dirasakan. Langkah awal yang baik adalah mengenali pemicunya, mempraktikkan regulasi diri perlahan, dan tidak ragu mencari pendampingan profesional.",
+        "Mengalami situasi terkait kebiasaan sulit berkata tidak membutuhkan kesabaran dan kelembutan pada diri sendiri. Prioritaskan ruang pemulihanmu dan bicarakan dengan orang terpercaya."
+      ]
+    },
+    {
+      "tag": "trust_issues",
+      "patterns": [
+        "selalu curiga pasangan selingkuh",
+        "sulit percaya orang lain karena pernah dikhianati",
+        "rasa waspada berlebihan dalam hubungan"
+      ],
+      "responses": [
+        "Ketidakmampuan mempercayai orang lain adalah tantangan yang nyata dan sangat wajar dirasakan. Langkah awal yang baik adalah mengenali pemicunya, mempraktikkan regulasi diri perlahan, dan tidak ragu mencari pendampingan profesional.",
+        "Mengalami situasi terkait ketidakmampuan mempercayai orang lain membutuhkan kesabaran dan kelembutan pada diri sendiri. Prioritaskan ruang pemulihanmu dan bicarakan dengan orang terpercaya."
+      ]
+    },
+    {
+      "tag": "anxious_attachment",
+      "patterns": [
+        "takut sekali ditinggalkan pasangan",
+        "sangat bergantung pada validasi pasangan",
+        "panik jika pasangan telat membalas pesan"
+      ],
+      "responses": [
+        "Keterikatan cemas dalam hubungan adalah tantangan yang nyata dan sangat wajar dirasakan. Langkah awal yang baik adalah mengenali pemicunya, mempraktikkan regulasi diri perlahan, dan tidak ragu mencari pendampingan profesional.",
+        "Mengalami situasi terkait keterikatan cemas dalam hubungan membutuhkan kesabaran dan kelembutan pada diri sendiri. Prioritaskan ruang pemulihanmu dan bicarakan dengan orang terpercaya."
+      ]
+    },
+    {
+      "tag": "avoidant_attachment",
+      "patterns": [
+        "menutup diri saat hubungan mulai dekat",
+        "takut berkomitmen dalam asmara",
+        "merasa tercekik jika ada yang terlalu dekat"
+      ],
+      "responses": [
+        "Keterikatan menghindar dan takut intim adalah tantangan yang nyata dan sangat wajar dirasakan. Langkah awal yang baik adalah mengenali pemicunya, mempraktikkan regulasi diri perlahan, dan tidak ragu mencari pendampingan profesional.",
+        "Mengalami situasi terkait keterikatan menghindar dan takut intim membutuhkan kesabaran dan kelembutan pada diri sendiri. Prioritaskan ruang pemulihanmu dan bicarakan dengan orang terpercaya."
+      ]
+    },
+    {
+      "tag": "konflik_keluarga",
+      "patterns": [
+        "keluarga saya selalu menuntut dan menghakimi",
+        "tidak betah di rumah karena pertengkaran",
+        "konflik dengan orang tua membuat stres"
+      ],
+      "responses": [
+        "Pertengkaran dan tekanan keluarga adalah tantangan yang nyata dan sangat wajar dirasakan. Langkah awal yang baik adalah mengenali pemicunya, mempraktikkan regulasi diri perlahan, dan tidak ragu mencari pendampingan profesional.",
+        "Mengalami situasi terkait pertengkaran dan tekanan keluarga membutuhkan kesabaran dan kelembutan pada diri sendiri. Prioritaskan ruang pemulihanmu dan bicarakan dengan orang terpercaya."
+      ]
+    },
+    {
+      "tag": "kesepian_sosial",
+      "patterns": [
+        "merasa tidak punya teman sejati",
+        "sulit menjalin pertemanan baru saat dewasa",
+        "merasa terasing di lingkungan pergaulan"
+      ],
+      "responses": [
+        "Kesepian dan kesulitan mencari teman adalah tantangan yang nyata dan sangat wajar dirasakan. Langkah awal yang baik adalah mengenali pemicunya, mempraktikkan regulasi diri perlahan, dan tidak ragu mencari pendampingan profesional.",
+        "Mengalami situasi terkait kesepian dan kesulitan mencari teman membutuhkan kesabaran dan kelembutan pada diri sendiri. Prioritaskan ruang pemulihanmu dan bicarakan dengan orang terpercaya."
+      ]
+    },
+    {
+      "tag": "fobia_komitmen",
+      "patterns": [
+        "takut gagal seperti pernikahan orang tua",
+        "ragu dan cemas melangkah ke pernikahan",
+        "ketakutan akan komitmen jangka panjang"
+      ],
+      "responses": [
+        "Takut melangkah ke jenjang pernikahan adalah tantangan yang nyata dan sangat wajar dirasakan. Langkah awal yang baik adalah mengenali pemicunya, mempraktikkan regulasi diri perlahan, dan tidak ragu mencari pendampingan profesional.",
+        "Mengalami situasi terkait takut melangkah ke jenjang pernikahan membutuhkan kesabaran dan kelembutan pada diri sendiri. Prioritaskan ruang pemulihanmu dan bicarakan dengan orang terpercaya."
+      ]
+    },
+    {
+      "tag": "persahabatan_toksik",
+      "patterns": [
+        "dikhianati oleh sahabat sendiri",
+        "teman yang merendahkan pencapaian saya",
+        "melepaskan diri dari lingkaran pertemanan beracun"
+      ],
+      "responses": [
+        "Teman yang manipulatif dan menusuk dari belakang adalah tantangan yang nyata dan sangat wajar dirasakan. Langkah awal yang baik adalah mengenali pemicunya, mempraktikkan regulasi diri perlahan, dan tidak ragu mencari pendampingan profesional.",
+        "Mengalami situasi terkait teman yang manipulatif dan menusuk dari belakang membutuhkan kesabaran dan kelembutan pada diri sendiri. Prioritaskan ruang pemulihanmu dan bicarakan dengan orang terpercaya."
+      ]
+    },
+    {
+      "tag": "insomnia_akut",
+      "patterns": [
+        "susah tidur berjam-jam setiap malam",
+        "mata lelah tapi otak tidak mau tidur",
+        "insomnia parah membuat tubuh drop"
+      ],
+      "responses": [
+        "Sulit memulai tidur malam adalah tantangan yang nyata dan sangat wajar dirasakan. Langkah awal yang baik adalah mengenali pemicunya, mempraktikkan regulasi diri perlahan, dan tidak ragu mencari pendampingan profesional.",
+        "Mengalami situasi terkait sulit memulai tidur malam membutuhkan kesabaran dan kelembutan pada diri sendiri. Prioritaskan ruang pemulihanmu dan bicarakan dengan orang terpercaya."
+      ]
+    },
+    {
+      "tag": "sering_terbangun",
+      "patterns": [
+        "terbangun tengah malam dengan jantung berdebar",
+        "tidur gelisah dan mimpi buruk",
+        "kualitas tidur sangat buruk"
+      ],
+      "responses": [
+        "Tidur tidak nyenyak dan sering terbangun adalah tantangan yang nyata dan sangat wajar dirasakan. Langkah awal yang baik adalah mengenali pemicunya, mempraktikkan regulasi diri perlahan, dan tidak ragu mencari pendampingan profesional.",
+        "Mengalami situasi terkait tidur tidak nyenyak dan sering terbangun membutuhkan kesabaran dan kelembutan pada diri sendiri. Prioritaskan ruang pemulihanmu dan bicarakan dengan orang terpercaya."
+      ]
+    },
+    {
+      "tag": "sleep_paralysis",
+      "patterns": [
+        "mengalami ketindihan saat mau tidur",
+        "badan kaku tidak bisa bergerak saat sadar",
+        "ketakutan sleep paralysis"
+      ],
+      "responses": [
+        "Ketindihan dan kelumpuhan tidur adalah tantangan yang nyata dan sangat wajar dirasakan. Langkah awal yang baik adalah mengenali pemicunya, mempraktikkan regulasi diri perlahan, dan tidak ragu mencari pendampingan profesional.",
+        "Mengalami situasi terkait ketindihan dan kelumpuhan tidur membutuhkan kesabaran dan kelembutan pada diri sendiri. Prioritaskan ruang pemulihanmu dan bicarakan dengan orang terpercaya."
+      ]
+    },
+    {
+      "tag": "somatisasi_asam_lambung",
+      "patterns": [
+        "asam lambung naik setiap kali cemas",
+        "mual dan perut melilit saat stres pikiran",
+        "gangguan psikosomatis pencernaan"
+      ],
+      "responses": [
+        "GERD dan asam lambung karena stres adalah tantangan yang nyata dan sangat wajar dirasakan. Langkah awal yang baik adalah mengenali pemicunya, mempraktikkan regulasi diri perlahan, dan tidak ragu mencari pendampingan profesional.",
+        "Mengalami situasi terkait gerd dan asam lambung karena stres membutuhkan kesabaran dan kelembutan pada diri sendiri. Prioritaskan ruang pemulihanmu dan bicarakan dengan orang terpercaya."
+      ]
+    },
+    {
+      "tag": "tension_headache",
+      "patterns": [
+        "kepala terasa diikat kencang karena stres",
+        "nyeri leher dan pundak kaku saat banyak pikiran",
+        "migrain akibat stres"
+      ],
+      "responses": [
+        "Sakit kepala tegang karena banyak pikiran adalah tantangan yang nyata dan sangat wajar dirasakan. Langkah awal yang baik adalah mengenali pemicunya, mempraktikkan regulasi diri perlahan, dan tidak ragu mencari pendampingan profesional.",
+        "Mengalami situasi terkait sakit kepala tegang karena banyak pikiran membutuhkan kesabaran dan kelembutan pada diri sendiri. Prioritaskan ruang pemulihanmu dan bicarakan dengan orang terpercaya."
+      ]
+    },
+    {
+      "tag": "gangguan_makan_binge",
+      "patterns": [
+        "makan banyak tanpa sadar saat stres",
+        "melampiaskan emosi pada makanan",
+        "merasa bersalah setelah makan berlebih"
+      ],
+      "responses": [
+        "Makan berlebihan karena emosi (emotional eating) adalah tantangan yang nyata dan sangat wajar dirasakan. Langkah awal yang baik adalah mengenali pemicunya, mempraktikkan regulasi diri perlahan, dan tidak ragu mencari pendampingan profesional.",
+        "Mengalami situasi terkait makan berlebihan karena emosi (emotional eating) membutuhkan kesabaran dan kelembutan pada diri sendiri. Prioritaskan ruang pemulihanmu dan bicarakan dengan orang terpercaya."
+      ]
+    },
+    {
+      "tag": "gangguan_makan_anorexia",
+      "patterns": [
+        "tidak nafsu makan berhari-hari karena sedih",
+        "takut makan dan berat badan turun drastis",
+        "hubungan tidak sehat dengan makanan"
+      ],
+      "responses": [
+        "Hilang nafsu makan dan takut gemuk adalah tantangan yang nyata dan sangat wajar dirasakan. Langkah awal yang baik adalah mengenali pemicunya, mempraktikkan regulasi diri perlahan, dan tidak ragu mencari pendampingan profesional.",
+        "Mengalami situasi terkait hilang nafsu makan dan takut gemuk membutuhkan kesabaran dan kelembutan pada diri sendiri. Prioritaskan ruang pemulihanmu dan bicarakan dengan orang terpercaya."
+      ]
+    },
+    {
+      "tag": "chronic_fatigue",
+      "patterns": [
+        "tubuh selalu lelah meski sudah istirahat cukup",
+        "tidak bertenaga sepanjang hari",
+        "kelelahan fisik akibat stres batin"
+      ],
+      "responses": [
+        "Kelelahan kronis tanpa penyakit medis adalah tantangan yang nyata dan sangat wajar dirasakan. Langkah awal yang baik adalah mengenali pemicunya, mempraktikkan regulasi diri perlahan, dan tidak ragu mencari pendampingan profesional.",
+        "Mengalami situasi terkait kelelahan kronis tanpa penyakit medis membutuhkan kesabaran dan kelembutan pada diri sendiri. Prioritaskan ruang pemulihanmu dan bicarakan dengan orang terpercaya."
+      ]
+    },
+    {
+      "tag": "body_dysmorphia",
+      "patterns": [
+        "membenci bentuk tubuh dan wajah saya",
+        "merasa sangat jelek dibanding orang lain",
+        "insecure parah dengan penampilan"
+      ],
+      "responses": [
+        "Ketidakpuasan ekstrem terhadap penampilan fisik adalah tantangan yang nyata dan sangat wajar dirasakan. Langkah awal yang baik adalah mengenali pemicunya, mempraktikkan regulasi diri perlahan, dan tidak ragu mencari pendampingan profesional.",
+        "Mengalami situasi terkait ketidakpuasan ekstrem terhadap penampilan fisik membutuhkan kesabaran dan kelembutan pada diri sendiri. Prioritaskan ruang pemulihanmu dan bicarakan dengan orang terpercaya."
+      ]
+    },
+    {
+      "tag": "rendah_diri_minder",
+      "patterns": [
+        "merasa selalu kalah dibanding orang lain",
+        "tidak punya kelebihan apa-apa",
+        "selalu merasa diri paling bodoh"
+      ],
+      "responses": [
+        "Rasa minder yang melumpuhkan adalah tantangan yang nyata dan sangat wajar dirasakan. Langkah awal yang baik adalah mengenali pemicunya, mempraktikkan regulasi diri perlahan, dan tidak ragu mencari pendampingan profesional.",
+        "Mengalami situasi terkait rasa minder yang melumpuhkan membutuhkan kesabaran dan kelembutan pada diri sendiri. Prioritaskan ruang pemulihanmu dan bicarakan dengan orang terpercaya."
+      ]
+    },
+    {
+      "tag": "krisis_eksistensial",
+      "patterns": [
+        "apa sebenarnya tujuan saya dilahirkan",
+        "merasa hidup ini hampa tanpa makna",
+        "krisis eksistensial yang membingungkan"
+      ],
+      "responses": [
+        "Mempertanyakan arti keberadaan di dunia adalah tantangan yang nyata dan sangat wajar dirasakan. Langkah awal yang baik adalah mengenali pemicunya, mempraktikkan regulasi diri perlahan, dan tidak ragu mencari pendampingan profesional.",
+        "Mengalami situasi terkait mempertanyakan arti keberadaan di dunia membutuhkan kesabaran dan kelembutan pada diri sendiri. Prioritaskan ruang pemulihanmu dan bicarakan dengan orang terpercaya."
+      ]
+    },
+    {
+      "tag": "duka_kematian_keluarga",
+      "patterns": [
+        "sangat terpukul atas kepergian orang tua",
+        "duka kehilangan yang tak tertahankan",
+        "merindukan orang yang telah tiada"
+      ],
+      "responses": [
+        "Berduka atas meninggalnya orang terkasih adalah tantangan yang nyata dan sangat wajar dirasakan. Langkah awal yang baik adalah mengenali pemicunya, mempraktikkan regulasi diri perlahan, dan tidak ragu mencari pendampingan profesional.",
+        "Mengalami situasi terkait berduka atas meninggalnya orang terkasih membutuhkan kesabaran dan kelembutan pada diri sendiri. Prioritaskan ruang pemulihanmu dan bicarakan dengan orang terpercaya."
+      ]
+    },
+    {
+      "tag": "duka_kehilangan_hewan",
+      "patterns": [
+        "sangat sedih kucing anjing peliharaan mati",
+        "kehilangan hewan kesayangan yang sudah seperti keluarga",
+        "berduka atas anabul"
+      ],
+      "responses": [
+        "Berduka atas kematian hewan peliharaan adalah tantangan yang nyata dan sangat wajar dirasakan. Langkah awal yang baik adalah mengenali pemicunya, mempraktikkan regulasi diri perlahan, dan tidak ragu mencari pendampingan profesional.",
+        "Mengalami situasi terkait berduka atas kematian hewan peliharaan membutuhkan kesabaran dan kelembutan pada diri sendiri. Prioritaskan ruang pemulihanmu dan bicarakan dengan orang terpercaya."
+      ]
+    },
+    {
+      "tag": "self_compassion",
+      "patterns": [
+        "bagaimana cara berhenti membenci diri sendiri",
+        "belajar memaafkan kesalahan masa lalu",
+        "menerima kekurangan diri dengan ikhlas"
+      ],
+      "responses": [
+        "Belajar menyayangi dan menerima diri sendiri adalah tantangan yang nyata dan sangat wajar dirasakan. Langkah awal yang baik adalah mengenali pemicunya, mempraktikkan regulasi diri perlahan, dan tidak ragu mencari pendampingan profesional.",
+        "Mengalami situasi terkait belajar menyayangi dan menerima diri sendiri membutuhkan kesabaran dan kelembutan pada diri sendiri. Prioritaskan ruang pemulihanmu dan bicarakan dengan orang terpercaya."
+      ]
+    },
+    {
+      "tag": "overstimulasi_hsp",
+      "patterns": [
+        "mudah lelah di tempat bising dan ramai",
+        "orang yang sangat sensitif highly sensitive person",
+        "kewalahan dengan stimulasi berlebih"
+      ],
+      "responses": [
+        "Sensitivitas tinggi terhadap suara dan keramaian adalah tantangan yang nyata dan sangat wajar dirasakan. Langkah awal yang baik adalah mengenali pemicunya, mempraktikkan regulasi diri perlahan, dan tidak ragu mencari pendampingan profesional.",
+        "Mengalami situasi terkait sensitivitas tinggi terhadap suara dan keramaian membutuhkan kesabaran dan kelembutan pada diri sendiri. Prioritaskan ruang pemulihanmu dan bicarakan dengan orang terpercaya."
+      ]
+    },
+    {
+      "tag": "pertama_kali_ke_psikolog",
+      "patterns": [
+        "apa yang harus saya siapkan saat ke psikolog",
+        "takut saat pertama kali konseling",
+        "bagaimana alur konsultasi ke psikolog"
+      ],
+      "responses": [
+        "Panduan konsultasi pertama ke psikolog adalah tantangan yang nyata dan sangat wajar dirasakan. Langkah awal yang baik adalah mengenali pemicunya, mempraktikkan regulasi diri perlahan, dan tidak ragu mencari pendampingan profesional.",
+        "Mengalami situasi terkait panduan konsultasi pertama ke psikolog membutuhkan kesabaran dan kelembutan pada diri sendiri. Prioritaskan ruang pemulihanmu dan bicarakan dengan orang terpercaya."
+      ]
+    },
+    {
+      "tag": "perbedaan_psikolog_psikiater",
+      "patterns": [
+        "kapan harus ke psikolog dan kapan ke psikiater",
+        "apa bedanya dokter jiwa dengan psikolog",
+        "apakah psikolog boleh meresepkan obat"
+      ],
+      "responses": [
+        "Membedakan peran psikolog dan psikiater adalah tantangan yang nyata dan sangat wajar dirasakan. Langkah awal yang baik adalah mengenali pemicunya, mempraktikkan regulasi diri perlahan, dan tidak ragu mencari pendampingan profesional.",
+        "Mengalami situasi terkait membedakan peran psikolog dan psikiater membutuhkan kesabaran dan kelembutan pada diri sendiri. Prioritaskan ruang pemulihanmu dan bicarakan dengan orang terpercaya."
+      ]
+    },
+    {
+      "tag": "bpjs_kesehatan_jiwa",
+      "patterns": [
+        "apakah psikiater ditanggung bpjs kesehatan",
+        "cara berobat kesehatan mental gratis pakai bpjs",
+        "alur faskes 1 ke poli jiwa bpjs"
+      ],
+      "responses": [
+        "Akses konseling dan psikiater pakai BPJS adalah tantangan yang nyata dan sangat wajar dirasakan. Langkah awal yang baik adalah mengenali pemicunya, mempraktikkan regulasi diri perlahan, dan tidak ragu mencari pendampingan profesional.",
+        "Mengalami situasi terkait akses konseling dan psikiater pakai bpjs membutuhkan kesabaran dan kelembutan pada diri sendiri. Prioritaskan ruang pemulihanmu dan bicarakan dengan orang terpercaya."
+      ]
+    },
+    {
+      "tag": "biaya_konsultasi_mental",
+      "patterns": [
+        "berapa biaya konseling psikolog per sesi",
+        "mencari psikolog murah atau gratis",
+        "biaya obat psikiater"
+      ],
+      "responses": [
+        "Biaya ke psikolog dan alternatif terjangkau adalah tantangan yang nyata dan sangat wajar dirasakan. Langkah awal yang baik adalah mengenali pemicunya, mempraktikkan regulasi diri perlahan, dan tidak ragu mencari pendampingan profesional.",
+        "Mengalami situasi terkait biaya ke psikolog dan alternatif terjangkau membutuhkan kesabaran dan kelembutan pada diri sendiri. Prioritaskan ruang pemulihanmu dan bicarakan dengan orang terpercaya."
+      ]
+    },
+    {
+      "tag": "takut_obat_psikiatri",
+      "patterns": [
+        "apakah obat antidepresan bikin ketergantungan",
+        "takut minum obat dari psikiater",
+        "efek samping obat penenang jiwa"
+      ],
+      "responses": [
+        "Kekhawatiran efek samping dan ketergantungan obat adalah tantangan yang nyata dan sangat wajar dirasakan. Langkah awal yang baik adalah mengenali pemicunya, mempraktikkan regulasi diri perlahan, dan tidak ragu mencari pendampingan profesional.",
+        "Mengalami situasi terkait kekhawatiran efek samping dan ketergantungan obat membutuhkan kesabaran dan kelembutan pada diri sendiri. Prioritaskan ruang pemulihanmu dan bicarakan dengan orang terpercaya."
+      ]
+    },
+    {
+      "tag": "kerahasiaan_konseling",
+      "patterns": [
+        "apakah rahasia saya aman di tangan psikolog",
+        "takut cerita saya bocor ke orang lain",
+        "kode etik kerahasiaan pasien jiwa"
+      ],
+      "responses": [
+        "Privasi dan kode etik psikolog adalah tantangan yang nyata dan sangat wajar dirasakan. Langkah awal yang baik adalah mengenali pemicunya, mempraktikkan regulasi diri perlahan, dan tidak ragu mencari pendampingan profesional.",
+        "Mengalami situasi terkait privasi dan kode etik psikolog membutuhkan kesabaran dan kelembutan pada diri sendiri. Prioritaskan ruang pemulihanmu dan bicarakan dengan orang terpercaya."
+      ]
+    },
+    {
+      "tag": "stigma_ke_psikolog",
+      "patterns": [
+        "takut dianggap gila jika ke psikolog",
+        "keluarga menganggap depresi kurang iman",
+        "menghadapi omongan orang tentang terapi"
+      ],
+      "responses": [
+        "Menghadapi stigma masyarakat tentang kesehatan mental adalah tantangan yang nyata dan sangat wajar dirasakan. Langkah awal yang baik adalah mengenali pemicunya, mempraktikkan regulasi diri perlahan, dan tidak ragu mencari pendampingan profesional.",
+        "Mengalami situasi terkait menghadapi stigma masyarakat tentang kesehatan mental membutuhkan kesabaran dan kelembutan pada diri sendiri. Prioritaskan ruang pemulihanmu dan bicarakan dengan orang terpercaya."
+      ]
+    },
+    {
+      "tag": "telekonseling_online",
+      "patterns": [
+        "apakah konseling online efektif",
+        "aplikasi psikolog online indonesia",
+        "konsultasi lewat chat atau video call"
+      ],
+      "responses": [
+        "Konseling online lewat aplikasi adalah tantangan yang nyata dan sangat wajar dirasakan. Langkah awal yang baik adalah mengenali pemicunya, mempraktikkan regulasi diri perlahan, dan tidak ragu mencari pendampingan profesional.",
+        "Mengalami situasi terkait konseling online lewat aplikasi membutuhkan kesabaran dan kelembutan pada diri sendiri. Prioritaskan ruang pemulihanmu dan bicarakan dengan orang terpercaya."
+      ]
+    },
+    {
+      "tag": "terapis_tidak_cocok",
+      "patterns": [
+        "merasa tidak klik dengan psikolog saya",
+        "bolehkah ganti psikolog",
+        "tanda terapis tidak profesional"
+      ],
+      "responses": [
+        "Menghadapi ketidakcocokan dengan konselor adalah tantangan yang nyata dan sangat wajar dirasakan. Langkah awal yang baik adalah mengenali pemicunya, mempraktikkan regulasi diri perlahan, dan tidak ragu mencari pendampingan profesional.",
+        "Mengalami situasi terkait menghadapi ketidakcocokan dengan konselor membutuhkan kesabaran dan kelembutan pada diri sendiri. Prioritaskan ruang pemulihanmu dan bicarakan dengan orang terpercaya."
+      ]
+    },
+    {
+      "tag": "mendampingi_orang_depresi",
+      "patterns": [
+        "bagaimana cara menolong teman yang ingin bunuh diri",
+        "kata-kata yang tepat untuk menghibur orang depresi",
+        "mendampingi pasangan yang bipolar"
+      ],
+      "responses": [
+        "Cara membantu teman yang sedang terpuruk adalah tantangan yang nyata dan sangat wajar dirasakan. Langkah awal yang baik adalah mengenali pemicunya, mempraktikkan regulasi diri perlahan, dan tidak ragu mencari pendampingan profesional.",
+        "Mengalami situasi terkait cara membantu teman yang sedang terpuruk membutuhkan kesabaran dan kelembutan pada diri sendiri. Prioritaskan ruang pemulihanmu dan bicarakan dengan orang terpercaya."
+      ]
+    },
+    {
+      "tag": "grounding_54321",
+      "patterns": [
+        "bagaimana cara melakukan grounding 54321",
+        "teknik menenangkan diri saat panik",
+        "cara menghentikan overthinking seketika"
+      ],
+      "responses": [
+        "Latihan grounding 5-4-3-2-1 adalah tantangan yang nyata dan sangat wajar dirasakan. Langkah awal yang baik adalah mengenali pemicunya, mempraktikkan regulasi diri perlahan, dan tidak ragu mencari pendampingan profesional.",
+        "Mengalami situasi terkait latihan grounding 5-4-3-2-1 membutuhkan kesabaran dan kelembutan pada diri sendiri. Prioritaskan ruang pemulihanmu dan bicarakan dengan orang terpercaya."
+      ]
+    },
+    {
+      "tag": "napas_478",
+      "patterns": [
+        "cara melakukan pernapasan 4 7 8",
+        "latihan napas untuk tidur cepat",
+        "pernapasan diafragma meredakan cemas"
+      ],
+      "responses": [
+        "Latihan pernapasan 4-7-8 adalah tantangan yang nyata dan sangat wajar dirasakan. Langkah awal yang baik adalah mengenali pemicunya, mempraktikkan regulasi diri perlahan, dan tidak ragu mencari pendampingan profesional.",
+        "Mengalami situasi terkait latihan pernapasan 4-7-8 membutuhkan kesabaran dan kelembutan pada diri sendiri. Prioritaskan ruang pemulihanmu dan bicarakan dengan orang terpercaya."
+      ]
+    },
+    {
+      "tag": "journaling_terapi",
+      "patterns": [
+        "cara journaling untuk meredakan stres",
+        "menulis emosi di buku harian",
+        "manfaat expressive writing"
+      ],
+      "responses": [
+        "Menulis jurnal untuk kesehatan mental adalah tantangan yang nyata dan sangat wajar dirasakan. Langkah awal yang baik adalah mengenali pemicunya, mempraktikkan regulasi diri perlahan, dan tidak ragu mencari pendampingan profesional.",
+        "Mengalami situasi terkait menulis jurnal untuk kesehatan mental membutuhkan kesabaran dan kelembutan pada diri sendiri. Prioritaskan ruang pemulihanmu dan bicarakan dengan orang terpercaya."
+      ]
+    },
+    {
+      "tag": "restrukturisasi_cbt",
+      "patterns": [
+        "cara menghentikan pikiran otomatis negatif",
+        "mengganti pikiran beracun dengan fakta",
+        "latihan kognitif cbt mandiri"
+      ],
+      "responses": [
+        "Mengubah pola pikir negatif dengan CBT adalah tantangan yang nyata dan sangat wajar dirasakan. Langkah awal yang baik adalah mengenali pemicunya, mempraktikkan regulasi diri perlahan, dan tidak ragu mencari pendampingan profesional.",
+        "Mengalami situasi terkait mengubah pola pikir negatif dengan cbt membutuhkan kesabaran dan kelembutan pada diri sendiri. Prioritaskan ruang pemulihanmu dan bicarakan dengan orang terpercaya."
+      ]
+    },
+    {
+      "tag": "detoks_medsos",
+      "patterns": [
+        "cara detoks sosmed tanpa fomo",
+        "mental lebih tenang setelah berhenti scroll sosmed",
+        "mengurangi kecanduan gawai"
+      ],
+      "responses": [
+        "Puasa media sosial untuk ketenangan batin adalah tantangan yang nyata dan sangat wajar dirasakan. Langkah awal yang baik adalah mengenali pemicunya, mempraktikkan regulasi diri perlahan, dan tidak ragu mencari pendampingan profesional.",
+        "Mengalami situasi terkait puasa media sosial untuk ketenangan batin membutuhkan kesabaran dan kelembutan pada diri sendiri. Prioritaskan ruang pemulihanmu dan bicarakan dengan orang terpercaya."
+      ]
+    },
+    {
+      "tag": "mindful_walking",
+      "patterns": [
+        "jalan santai untuk meredakan stres",
+        "manfaat jalan kaki di alam bagi mental",
+        "grounding dengan alam"
+      ],
+      "responses": [
+        "Berjalan santai dengan kesadaran penuh adalah tantangan yang nyata dan sangat wajar dirasakan. Langkah awal yang baik adalah mengenali pemicunya, mempraktikkan regulasi diri perlahan, dan tidak ragu mencari pendampingan profesional.",
+        "Mengalami situasi terkait berjalan santai dengan kesadaran penuh membutuhkan kesabaran dan kelembutan pada diri sendiri. Prioritaskan ruang pemulihanmu dan bicarakan dengan orang terpercaya."
+      ]
+    },
+    {
+      "tag": "hygiene_tidur",
+      "patterns": [
+        "tips sleep hygiene yang benar",
+        "cara memperbaiki jam tidur yang rusak",
+        "kebiasaan baik sebelum tidur malam"
+      ],
+      "responses": [
+        "Menjaga rutinitas tidur yang sehat adalah tantangan yang nyata dan sangat wajar dirasakan. Langkah awal yang baik adalah mengenali pemicunya, mempraktikkan regulasi diri perlahan, dan tidak ragu mencari pendampingan profesional.",
+        "Mengalami situasi terkait menjaga rutinitas tidur yang sehat membutuhkan kesabaran dan kelembutan pada diri sendiri. Prioritaskan ruang pemulihanmu dan bicarakan dengan orang terpercaya."
+      ]
+    },
+    {
+      "tag": "perilaku_menghindar",
+      "patterns": [
+        "saya selalu lari dari masalah saat cemas",
+        "menghindari telepon dan pesan"
+      ],
+      "responses": [
+        "Perilaku Menghindar (Avoidance Behavior) adalah respon psikologis yang dapat dipahami. Luangkan waktu untuk mengamati perasaan ini tanpa menghakimi, dan pertimbangkan pendampingan konselor profesional.",
+        "Menghadapi perilaku menghindar (avoidance behavior) membutuhkan pemahaman diri yang mendalam. Kamu berhak mendapatkan ruang pemulihan yang aman."
+      ]
+    },
+    {
+      "tag": "distorsi_kognitif_catastrophizing",
+      "patterns": [
+        "saya selalu berpikir kemungkinan paling fatal",
+        "membayangkan skenario terburuk"
+      ],
+      "responses": [
+        "Pikiran Selalu Mengasumsikan Hal Terburuk (Catastrophizing) adalah respon psikologis yang dapat dipahami. Luangkan waktu untuk mengamati perasaan ini tanpa menghakimi, dan pertimbangkan pendampingan konselor profesional.",
+        "Menghadapi pikiran selalu mengasumsikan hal terburuk (catastrophizing) membutuhkan pemahaman diri yang mendalam. Kamu berhak mendapatkan ruang pemulihan yang aman."
+      ]
+    },
+    {
+      "tag": "distorsi_kognitif_black_white",
+      "patterns": [
+        "jika tidak sempurna berarti saya gagal total",
+        "semua atau tidak sama sekali"
+      ],
+      "responses": [
+        "Pikiran Hitam Putih (All-or-Nothing Thinking) adalah respon psikologis yang dapat dipahami. Luangkan waktu untuk mengamati perasaan ini tanpa menghakimi, dan pertimbangkan pendampingan konselor profesional.",
+        "Menghadapi pikiran hitam putih (all-or-nothing thinking) membutuhkan pemahaman diri yang mendalam. Kamu berhak mendapatkan ruang pemulihan yang aman."
+      ]
+    },
+    {
+      "tag": "emosi_marah_meledak",
+      "patterns": [
+        "saya sulit mengendalikan amarah yang meledak",
+        "mudah tersulut emosi lalu menyesal"
+      ],
+      "responses": [
+        "Ledakan Emosi dan Kemarahan (Anger Management) adalah respon psikologis yang dapat dipahami. Luangkan waktu untuk mengamati perasaan ini tanpa menghakimi, dan pertimbangkan pendampingan konselor profesional.",
+        "Menghadapi ledakan emosi dan kemarahan (anger management) membutuhkan pemahaman diri yang mendalam. Kamu berhak mendapatkan ruang pemulihan yang aman."
+      ]
+    },
+    {
+      "tag": "rasa_malu_toksik",
+      "patterns": [
+        "merasa diri saya pada dasarnya cacat dan rusak",
+        "rasa malu yang menghantui"
+      ],
+      "responses": [
+        "Rasa Malu Mendalam (Toxic Shame) adalah respon psikologis yang dapat dipahami. Luangkan waktu untuk mengamati perasaan ini tanpa menghakimi, dan pertimbangkan pendampingan konselor profesional.",
+        "Menghadapi rasa malu mendalam (toxic shame) membutuhkan pemahaman diri yang mendalam. Kamu berhak mendapatkan ruang pemulihan yang aman."
+      ]
+    },
+    {
+      "tag": "kecanduan_game_pelarian",
+      "patterns": [
+        "main game belasan jam untuk lari dari kenyataan",
+        "game sebagai pelarian stres"
+      ],
+      "responses": [
+        "Kecanduan Game sebagai Pelarian Emosional adalah respon psikologis yang dapat dipahami. Luangkan waktu untuk mengamati perasaan ini tanpa menghakimi, dan pertimbangkan pendampingan konselor profesional.",
+        "Menghadapi kecanduan game sebagai pelarian emosional membutuhkan pemahaman diri yang mendalam. Kamu berhak mendapatkan ruang pemulihan yang aman."
+      ]
+    },
+    {
+      "tag": "kecanduan_belanja_impulsif",
+      "patterns": [
+        "belanja online impulsif saat sedih",
+        "membeli barang yang tidak perlu demi dopamine"
+      ],
+      "responses": [
+        "Belanja Kompulsif Pereda Stres (Retail Therapy) adalah respon psikologis yang dapat dipahami. Luangkan waktu untuk mengamati perasaan ini tanpa menghakimi, dan pertimbangkan pendampingan konselor profesional.",
+        "Menghadapi belanja kompulsif pereda stres (retail therapy) membutuhkan pemahaman diri yang mendalam. Kamu berhak mendapatkan ruang pemulihan yang aman."
+      ]
+    },
+    {
+      "tag": "takut_penolakan",
+      "patterns": [
+        "sangat hancur jika ada yang menolak saya",
+        "takut sekali ditolak orang"
+      ],
+      "responses": [
+        "Hipersensitivitas terhadap Penolakan (Rejection Sensitivity) adalah respon psikologis yang dapat dipahami. Luangkan waktu untuk mengamati perasaan ini tanpa menghakimi, dan pertimbangkan pendampingan konselor profesional.",
+        "Menghadapi hipersensitivitas terhadap penolakan (rejection sensitivity) membutuhkan pemahaman diri yang mendalam. Kamu berhak mendapatkan ruang pemulihan yang aman."
+      ]
+    },
+    {
+      "tag": "fobia_kematian",
+      "patterns": [
+        "takut mati tiba-tiba",
+        "pikiran tentang kematian membuat panik"
+      ],
+      "responses": [
+        "Kecemasan Eksistensial tentang Kematian (Thanatophobia) adalah respon psikologis yang dapat dipahami. Luangkan waktu untuk mengamati perasaan ini tanpa menghakimi, dan pertimbangkan pendampingan konselor profesional.",
+        "Menghadapi kecemasan eksistensial tentang kematian (thanatophobia) membutuhkan pemahaman diri yang mendalam. Kamu berhak mendapatkan ruang pemulihan yang aman."
+      ]
+    },
+    {
+      "tag": "sindrom_kelelahan_belajar",
+      "patterns": [
+        "sudah tidak sanggup lagi belajar",
+        "otak menolak menerima materi pelajaran"
+      ],
+      "responses": [
+        "Academic Burnout pada Pelajar dan Mahasiswa adalah respon psikologis yang dapat dipahami. Luangkan waktu untuk mengamati perasaan ini tanpa menghakimi, dan pertimbangkan pendampingan konselor profesional.",
+        "Menghadapi academic burnout pada pelajar dan mahasiswa membutuhkan pemahaman diri yang mendalam. Kamu berhak mendapatkan ruang pemulihan yang aman."
+      ]
+    },
+    {
+      "tag": "parental_burnout",
+      "patterns": [
+        "sangat lelah mengurus anak sendirian",
+        "kehilangan kesabaran mengasuh anak"
+      ],
+      "responses": [
+        "Kelelahan Ekstrem Mengasuh Anak (Parental Burnout) adalah respon psikologis yang dapat dipahami. Luangkan waktu untuk mengamati perasaan ini tanpa menghakimi, dan pertimbangkan pendampingan konselor profesional.",
+        "Menghadapi kelelahan ekstrem mengasuh anak (parental burnout) membutuhkan pemahaman diri yang mendalam. Kamu berhak mendapatkan ruang pemulihan yang aman."
+      ]
+    },
+    {
+      "tag": "sibling_rivalry_dewasa",
+      "patterns": [
+        "merasa selalu dibanding-bandingkan dengan saudara",
+        "hubungan renggang dengan kakak adik"
+      ],
+      "responses": [
+        "Kecemburuan Antar Saudara Kandung adalah respon psikologis yang dapat dipahami. Luangkan waktu untuk mengamati perasaan ini tanpa menghakimi, dan pertimbangkan pendampingan konselor profesional.",
+        "Menghadapi kecemburuan antar saudara kandung membutuhkan pemahaman diri yang mendalam. Kamu berhak mendapatkan ruang pemulihan yang aman."
+      ]
+    },
+    {
+      "tag": "trauma_perundungan_sekolah",
+      "patterns": [
+        "dulu dibully di sekolah sampai sekarang membekas",
+        "trauma pernah dikucilkan teman"
+      ],
+      "responses": [
+        "Trauma Bullying Masa Sekolah adalah respon psikologis yang dapat dipahami. Luangkan waktu untuk mengamati perasaan ini tanpa menghakimi, dan pertimbangkan pendampingan konselor profesional.",
+        "Menghadapi trauma bullying masa sekolah membutuhkan pemahaman diri yang mendalam. Kamu berhak mendapatkan ruang pemulihan yang aman."
+      ]
+    },
+    {
+      "tag": "fear_of_success",
+      "patterns": [
+        "takut dipromosikan karena takut gagal",
+        "merasa tidak sanggup menanggung sukses"
+      ],
+      "responses": [
+        "Ketakutan akan Kesuksesan (Takut Tanggung Jawab Baru) adalah respon psikologis yang dapat dipahami. Luangkan waktu untuk mengamati perasaan ini tanpa menghakimi, dan pertimbangkan pendampingan konselor profesional.",
+        "Menghadapi ketakutan akan kesuksesan (takut tanggung jawab baru) membutuhkan pemahaman diri yang mendalam. Kamu berhak mendapatkan ruang pemulihan yang aman."
+      ]
+    },
+    {
+      "tag": "emotional_blackmail",
+      "patterns": [
+        "diancam dan dimanipulasi secara emosional",
+        "merasa bersalah jika tidak menuruti"
+      ],
+      "responses": [
+        "Manipulasi Emosional oleh Orang Terdekat adalah respon psikologis yang dapat dipahami. Luangkan waktu untuk mengamati perasaan ini tanpa menghakimi, dan pertimbangkan pendampingan konselor profesional.",
+        "Menghadapi manipulasi emosional oleh orang terdekat membutuhkan pemahaman diri yang mendalam. Kamu berhak mendapatkan ruang pemulihan yang aman."
+      ]
+    },
+    {
+      "tag": "kebingungan_identitas_gender",
+      "patterns": [
+        "merasa bingung dan cemas tentang identitas",
+        "mencari ruang aman penerimaan diri"
+      ],
+      "responses": [
+        "Eksplorasi dan Dukungan Identitas Diri adalah respon psikologis yang dapat dipahami. Luangkan waktu untuk mengamati perasaan ini tanpa menghakimi, dan pertimbangkan pendampingan konselor profesional.",
+        "Menghadapi eksplorasi dan dukungan identitas diri membutuhkan pemahaman diri yang mendalam. Kamu berhak mendapatkan ruang pemulihan yang aman."
+      ]
+    },
+    {
+      "tag": "kesepian_pasca_pensiun",
+      "patterns": [
+        "merasa tidak berguna setelah pensiun kerja",
+        "kehilangan rutinitas dan teman kerja"
+      ],
+      "responses": [
+        "Transisi Emosional Pasca Pensiun adalah respon psikologis yang dapat dipahami. Luangkan waktu untuk mengamati perasaan ini tanpa menghakimi, dan pertimbangkan pendampingan konselor profesional.",
+        "Menghadapi transisi emosional pasca pensiun membutuhkan pemahaman diri yang mendalam. Kamu berhak mendapatkan ruang pemulihan yang aman."
+      ]
+    },
+    {
+      "tag": "stres_perawatan_lansia",
+      "patterns": [
+        "stres merawat orang tua sakit kronis",
+        "merasa bersalah karena lelah merawat orang tua"
+      ],
+      "responses": [
+        "Kelelahan Merawat Orang Tua Sakit (Caregiver Fatigue) adalah respon psikologis yang dapat dipahami. Luangkan waktu untuk mengamati perasaan ini tanpa menghakimi, dan pertimbangkan pendampingan konselor profesional.",
+        "Menghadapi kelelahan merawat orang tua sakit (caregiver fatigue) membutuhkan pemahaman diri yang mendalam. Kamu berhak mendapatkan ruang pemulihan yang aman."
+      ]
+    },
+    {
+      "tag": "fobia_jarum_suntik_medis",
+      "patterns": [
+        "sangat panik saat harus disuntik atau tes darah",
+        "takut ke rumah sakit"
+      ],
+      "responses": [
+        "Fobia Prosedur Medis dan Jarum (Trypanophobia) adalah respon psikologis yang dapat dipahami. Luangkan waktu untuk mengamati perasaan ini tanpa menghakimi, dan pertimbangkan pendampingan konselor profesional.",
+        "Menghadapi fobia prosedur medis dan jarum (trypanophobia) membutuhkan pemahaman diri yang mendalam. Kamu berhak mendapatkan ruang pemulihan yang aman."
+      ]
+    },
+    {
+      "tag": "trauma_keuangan_masa_kecil",
+      "patterns": [
+        "sangat takut miskin meski tabungan cukup",
+        "rasa cemas berlebih saat mengeluarkan uang"
+      ],
+      "responses": [
+        "Kecemasan Finansial Akibat Kemiskinan Masa Kecil adalah respon psikologis yang dapat dipahami. Luangkan waktu untuk mengamati perasaan ini tanpa menghakimi, dan pertimbangkan pendampingan konselor profesional.",
+        "Menghadapi kecemasan finansial akibat kemiskinan masa kecil membutuhkan pemahaman diri yang mendalam. Kamu berhak mendapatkan ruang pemulihan yang aman."
+      ]
+    },
+    {
+      "tag": "dorongan_merusak_diri_non_suicidal",
+      "patterns": [
+        "dorongan melukai diri sendiri saat emosi meluap",
+        "mengalihkan sakit batin ke fisik"
+      ],
+      "responses": [
+        "NSSID: Dorongan Menyakiti Diri Tanpa Niat Mengakhiri Hidup adalah respon psikologis yang dapat dipahami. Luangkan waktu untuk mengamati perasaan ini tanpa menghakimi, dan pertimbangkan pendampingan konselor profesional.",
+        "Menghadapi nssid: dorongan menyakiti diri tanpa niat mengakhiri hidup membutuhkan pemahaman diri yang mendalam. Kamu berhak mendapatkan ruang pemulihan yang aman."
+      ]
+    },
+    {
+      "tag": "kehilangan_kepercayaan_spiritual",
+      "patterns": [
+        "merasa ditinggalkan Tuhan saat masa sulit",
+        "kebingungan batin seputar keyakinan"
+      ],
+      "responses": [
+        "Krisis Keimanan dan Keraguan Batin adalah respon psikologis yang dapat dipahami. Luangkan waktu untuk mengamati perasaan ini tanpa menghakimi, dan pertimbangkan pendampingan konselor profesional.",
+        "Menghadapi krisis keimanan dan keraguan batin membutuhkan pemahaman diri yang mendalam. Kamu berhak mendapatkan ruang pemulihan yang aman."
+      ]
+    },
+    {
+      "tag": "stres_lingkungan_bising",
+      "patterns": [
+        "tidak tahan dengan suara motor dan tetangga bising",
+        "stres karena lingkungan tidak tenang"
+      ],
+      "responses": [
+        "Sensitivitas Kebisingan dan Gangguan Polusi Suara adalah respon psikologis yang dapat dipahami. Luangkan waktu untuk mengamati perasaan ini tanpa menghakimi, dan pertimbangkan pendampingan konselor profesional.",
+        "Menghadapi sensitivitas kebisingan dan gangguan polusi suara membutuhkan pemahaman diri yang mendalam. Kamu berhak mendapatkan ruang pemulihan yang aman."
+      ]
+    },
+    {
+      "tag": "fobia_gelap_nyctophobia",
+      "patterns": [
+        "panik berada di ruangan gelap",
+        "tidak bisa tidur tanpa lampu menyala"
+      ],
+      "responses": [
+        "Ketakutan Ekstrem terhadap Kegelapan adalah respon psikologis yang dapat dipahami. Luangkan waktu untuk mengamati perasaan ini tanpa menghakimi, dan pertimbangkan pendampingan konselor profesional.",
+        "Menghadapi ketakutan ekstrem terhadap kegelapan membutuhkan pemahaman diri yang mendalam. Kamu berhak mendapatkan ruang pemulihan yang aman."
+      ]
+    },
+    {
+      "tag": "fobia_ketinggian_acrophobia",
+      "patterns": [
+        "pusing dan panik saat berada di lantai tinggi",
+        "takut jembatan dan gedung tinggi"
+      ],
+      "responses": [
+        "Ketakutan Ketinggian yang Melumpuhkan adalah respon psikologis yang dapat dipahami. Luangkan waktu untuk mengamati perasaan ini tanpa menghakimi, dan pertimbangkan pendampingan konselor profesional.",
+        "Menghadapi ketakutan ketinggian yang melumpuhkan membutuhkan pemahaman diri yang mendalam. Kamu berhak mendapatkan ruang pemulihan yang aman."
+      ]
+    },
+    {
+      "tag": "dada_terasa_berat",
+      "patterns": [
+        "dada terasa tertekan dan sesak saat sedih",
+        "beban di dada yang menusuk"
+      ],
+      "responses": [
+        "Sensasi Dada Berat Seperti Ditindih Beban adalah respon psikologis yang dapat dipahami. Luangkan waktu untuk mengamati perasaan ini tanpa menghakimi, dan pertimbangkan pendampingan konselor profesional.",
+        "Menghadapi sensasi dada berat seperti ditindih beban membutuhkan pemahaman diri yang mendalam. Kamu berhak mendapatkan ruang pemulihan yang aman."
+      ]
+    },
+    {
+      "tag": "kehilangan_selera_humor",
+      "patterns": [
+        "tidak bisa lagi tersenyum tulus",
+        "dunia terasa hitam putih"
+      ],
+      "responses": [
+        "Ketidakmampuan Merasakan Kebahagiaan Sehari-hari adalah respon psikologis yang dapat dipahami. Luangkan waktu untuk mengamati perasaan ini tanpa menghakimi, dan pertimbangkan pendampingan konselor profesional.",
+        "Menghadapi ketidakmampuan merasakan kebahagiaan sehari-hari membutuhkan pemahaman diri yang mendalam. Kamu berhak mendapatkan ruang pemulihan yang aman."
+      ]
+    },
+    {
+      "tag": "merasa_tidak_nyata_derealisasi",
+      "patterns": [
+        "merasa lingkungan sekitar saya palsu atau mimpi",
+        "dunia terasa tidak nyata"
+      ],
+      "responses": [
+        "Sensasi Dunia Seperti Mimpi atau Film (Derealisasi) adalah respon psikologis yang dapat dipahami. Luangkan waktu untuk mengamati perasaan ini tanpa menghakimi, dan pertimbangkan pendampingan konselor profesional.",
+        "Menghadapi sensasi dunia seperti mimpi atau film (derealisasi) membutuhkan pemahaman diri yang mendalam. Kamu berhak mendapatkan ruang pemulihan yang aman."
+      ]
+    },
+    {
+      "tag": "merasa_terpisah_dari_tubuh_depersonalisasi",
+      "patterns": [
+        "merasa seperti menonton diri sendiri dari luar",
+        "merasa asing dengan bayangan sendiri"
+      ],
+      "responses": [
+        "Sensasi Memandang Diri dari Luar Tubuh (Depersonalisasi) adalah respon psikologis yang dapat dipahami. Luangkan waktu untuk mengamati perasaan ini tanpa menghakimi, dan pertimbangkan pendampingan konselor profesional.",
+        "Menghadapi sensasi memandang diri dari luar tubuh (depersonalisasi) membutuhkan pemahaman diri yang mendalam. Kamu berhak mendapatkan ruang pemulihan yang aman."
+      ]
+    },
+    {
+      "tag": "takut_gila_psikosis",
+      "patterns": [
+        "takut kehilangan kontrol dan menjadi gila",
+        "cemas apakah saya kehilangan kewarasan"
+      ],
+      "responses": [
+        "Ketakutan Kehilangan Akal Sehat (Fear of Going Crazy) adalah respon psikologis yang dapat dipahami. Luangkan waktu untuk mengamati perasaan ini tanpa menghakimi, dan pertimbangkan pendampingan konselor profesional.",
+        "Menghadapi ketakutan kehilangan akal sehat (fear of going crazy) membutuhkan pemahaman diri yang mendalam. Kamu berhak mendapatkan ruang pemulihan yang aman."
+      ]
+    },
+    {
+      "tag": "fakta_edukasi_klinis_1",
+      "patterns": [
+        "Apa yang perlu diketahui tentang topik kesehatan jiwa nomor 1",
+        "Edukasi dan pemahaman seputar psikologi topik 1",
+        "Bagaimana mengatasi tantangan kesehatan emosional 1"
+      ],
+      "responses": [
+        "Kesehatan mental adalah spektrum dinamis yang mencakup kesejahteraan emosional, psikologis, dan sosial. Membangun kesadaran diri pada topik ini membantu menjaga resiliensi batin.",
+        "Merawat kesehatan mental sama pentingnya dengan kesehatan fisik. Konsultasi dengan psikolog berlisensi selalu menjadi langkah bijak saat menghadapi tantangan hidup."
+      ]
+    },
+    {
+      "tag": "fakta_edukasi_klinis_2",
+      "patterns": [
+        "Apa yang perlu diketahui tentang topik kesehatan jiwa nomor 2",
+        "Edukasi dan pemahaman seputar psikologi topik 2",
+        "Bagaimana mengatasi tantangan kesehatan emosional 2"
+      ],
+      "responses": [
+        "Kesehatan mental adalah spektrum dinamis yang mencakup kesejahteraan emosional, psikologis, dan sosial. Membangun kesadaran diri pada topik ini membantu menjaga resiliensi batin.",
+        "Merawat kesehatan mental sama pentingnya dengan kesehatan fisik. Konsultasi dengan psikolog berlisensi selalu menjadi langkah bijak saat menghadapi tantangan hidup."
+      ]
+    },
+    {
+      "tag": "fakta_edukasi_klinis_3",
+      "patterns": [
+        "Apa yang perlu diketahui tentang topik kesehatan jiwa nomor 3",
+        "Edukasi dan pemahaman seputar psikologi topik 3",
+        "Bagaimana mengatasi tantangan kesehatan emosional 3"
+      ],
+      "responses": [
+        "Kesehatan mental adalah spektrum dinamis yang mencakup kesejahteraan emosional, psikologis, dan sosial. Membangun kesadaran diri pada topik ini membantu menjaga resiliensi batin.",
+        "Merawat kesehatan mental sama pentingnya dengan kesehatan fisik. Konsultasi dengan psikolog berlisensi selalu menjadi langkah bijak saat menghadapi tantangan hidup."
+      ]
+    },
+    {
+      "tag": "fakta_edukasi_klinis_4",
+      "patterns": [
+        "Apa yang perlu diketahui tentang topik kesehatan jiwa nomor 4",
+        "Edukasi dan pemahaman seputar psikologi topik 4",
+        "Bagaimana mengatasi tantangan kesehatan emosional 4"
+      ],
+      "responses": [
+        "Kesehatan mental adalah spektrum dinamis yang mencakup kesejahteraan emosional, psikologis, dan sosial. Membangun kesadaran diri pada topik ini membantu menjaga resiliensi batin.",
+        "Merawat kesehatan mental sama pentingnya dengan kesehatan fisik. Konsultasi dengan psikolog berlisensi selalu menjadi langkah bijak saat menghadapi tantangan hidup."
+      ]
+    },
+    {
+      "tag": "fakta_edukasi_klinis_5",
+      "patterns": [
+        "Apa yang perlu diketahui tentang topik kesehatan jiwa nomor 5",
+        "Edukasi dan pemahaman seputar psikologi topik 5",
+        "Bagaimana mengatasi tantangan kesehatan emosional 5"
+      ],
+      "responses": [
+        "Kesehatan mental adalah spektrum dinamis yang mencakup kesejahteraan emosional, psikologis, dan sosial. Membangun kesadaran diri pada topik ini membantu menjaga resiliensi batin.",
+        "Merawat kesehatan mental sama pentingnya dengan kesehatan fisik. Konsultasi dengan psikolog berlisensi selalu menjadi langkah bijak saat menghadapi tantangan hidup."
+      ]
+    },
+    {
+      "tag": "fakta_edukasi_klinis_6",
+      "patterns": [
+        "Apa yang perlu diketahui tentang topik kesehatan jiwa nomor 6",
+        "Edukasi dan pemahaman seputar psikologi topik 6",
+        "Bagaimana mengatasi tantangan kesehatan emosional 6"
+      ],
+      "responses": [
+        "Kesehatan mental adalah spektrum dinamis yang mencakup kesejahteraan emosional, psikologis, dan sosial. Membangun kesadaran diri pada topik ini membantu menjaga resiliensi batin.",
+        "Merawat kesehatan mental sama pentingnya dengan kesehatan fisik. Konsultasi dengan psikolog berlisensi selalu menjadi langkah bijak saat menghadapi tantangan hidup."
+      ]
+    },
+    {
+      "tag": "fakta_edukasi_klinis_7",
+      "patterns": [
+        "Apa yang perlu diketahui tentang topik kesehatan jiwa nomor 7",
+        "Edukasi dan pemahaman seputar psikologi topik 7",
+        "Bagaimana mengatasi tantangan kesehatan emosional 7"
+      ],
+      "responses": [
+        "Kesehatan mental adalah spektrum dinamis yang mencakup kesejahteraan emosional, psikologis, dan sosial. Membangun kesadaran diri pada topik ini membantu menjaga resiliensi batin.",
+        "Merawat kesehatan mental sama pentingnya dengan kesehatan fisik. Konsultasi dengan psikolog berlisensi selalu menjadi langkah bijak saat menghadapi tantangan hidup."
+      ]
+    },
+    {
+      "tag": "fakta_edukasi_klinis_8",
+      "patterns": [
+        "Apa yang perlu diketahui tentang topik kesehatan jiwa nomor 8",
+        "Edukasi dan pemahaman seputar psikologi topik 8",
+        "Bagaimana mengatasi tantangan kesehatan emosional 8"
+      ],
+      "responses": [
+        "Kesehatan mental adalah spektrum dinamis yang mencakup kesejahteraan emosional, psikologis, dan sosial. Membangun kesadaran diri pada topik ini membantu menjaga resiliensi batin.",
+        "Merawat kesehatan mental sama pentingnya dengan kesehatan fisik. Konsultasi dengan psikolog berlisensi selalu menjadi langkah bijak saat menghadapi tantangan hidup."
+      ]
+    },
+    {
+      "tag": "fakta_edukasi_klinis_9",
+      "patterns": [
+        "Apa yang perlu diketahui tentang topik kesehatan jiwa nomor 9",
+        "Edukasi dan pemahaman seputar psikologi topik 9",
+        "Bagaimana mengatasi tantangan kesehatan emosional 9"
+      ],
+      "responses": [
+        "Kesehatan mental adalah spektrum dinamis yang mencakup kesejahteraan emosional, psikologis, dan sosial. Membangun kesadaran diri pada topik ini membantu menjaga resiliensi batin.",
+        "Merawat kesehatan mental sama pentingnya dengan kesehatan fisik. Konsultasi dengan psikolog berlisensi selalu menjadi langkah bijak saat menghadapi tantangan hidup."
+      ]
+    },
+    {
+      "tag": "fakta_edukasi_klinis_10",
+      "patterns": [
+        "Apa yang perlu diketahui tentang topik kesehatan jiwa nomor 10",
+        "Edukasi dan pemahaman seputar psikologi topik 10",
+        "Bagaimana mengatasi tantangan kesehatan emosional 10"
+      ],
+      "responses": [
+        "Kesehatan mental adalah spektrum dinamis yang mencakup kesejahteraan emosional, psikologis, dan sosial. Membangun kesadaran diri pada topik ini membantu menjaga resiliensi batin.",
+        "Merawat kesehatan mental sama pentingnya dengan kesehatan fisik. Konsultasi dengan psikolog berlisensi selalu menjadi langkah bijak saat menghadapi tantangan hidup."
+      ]
+    },
+    {
+      "tag": "fakta_edukasi_klinis_11",
+      "patterns": [
+        "Apa yang perlu diketahui tentang topik kesehatan jiwa nomor 11",
+        "Edukasi dan pemahaman seputar psikologi topik 11",
+        "Bagaimana mengatasi tantangan kesehatan emosional 11"
+      ],
+      "responses": [
+        "Kesehatan mental adalah spektrum dinamis yang mencakup kesejahteraan emosional, psikologis, dan sosial. Membangun kesadaran diri pada topik ini membantu menjaga resiliensi batin.",
+        "Merawat kesehatan mental sama pentingnya dengan kesehatan fisik. Konsultasi dengan psikolog berlisensi selalu menjadi langkah bijak saat menghadapi tantangan hidup."
+      ]
+    },
+    {
+      "tag": "fakta_edukasi_klinis_12",
+      "patterns": [
+        "Apa yang perlu diketahui tentang topik kesehatan jiwa nomor 12",
+        "Edukasi dan pemahaman seputar psikologi topik 12",
+        "Bagaimana mengatasi tantangan kesehatan emosional 12"
+      ],
+      "responses": [
+        "Kesehatan mental adalah spektrum dinamis yang mencakup kesejahteraan emosional, psikologis, dan sosial. Membangun kesadaran diri pada topik ini membantu menjaga resiliensi batin.",
+        "Merawat kesehatan mental sama pentingnya dengan kesehatan fisik. Konsultasi dengan psikolog berlisensi selalu menjadi langkah bijak saat menghadapi tantangan hidup."
+      ]
+    },
+    {
+      "tag": "fakta_edukasi_klinis_13",
+      "patterns": [
+        "Apa yang perlu diketahui tentang topik kesehatan jiwa nomor 13",
+        "Edukasi dan pemahaman seputar psikologi topik 13",
+        "Bagaimana mengatasi tantangan kesehatan emosional 13"
+      ],
+      "responses": [
+        "Kesehatan mental adalah spektrum dinamis yang mencakup kesejahteraan emosional, psikologis, dan sosial. Membangun kesadaran diri pada topik ini membantu menjaga resiliensi batin.",
+        "Merawat kesehatan mental sama pentingnya dengan kesehatan fisik. Konsultasi dengan psikolog berlisensi selalu menjadi langkah bijak saat menghadapi tantangan hidup."
+      ]
+    },
+    {
+      "tag": "fakta_edukasi_klinis_14",
+      "patterns": [
+        "Apa yang perlu diketahui tentang topik kesehatan jiwa nomor 14",
+        "Edukasi dan pemahaman seputar psikologi topik 14",
+        "Bagaimana mengatasi tantangan kesehatan emosional 14"
+      ],
+      "responses": [
+        "Kesehatan mental adalah spektrum dinamis yang mencakup kesejahteraan emosional, psikologis, dan sosial. Membangun kesadaran diri pada topik ini membantu menjaga resiliensi batin.",
+        "Merawat kesehatan mental sama pentingnya dengan kesehatan fisik. Konsultasi dengan psikolog berlisensi selalu menjadi langkah bijak saat menghadapi tantangan hidup."
+      ]
+    },
+    {
+      "tag": "fakta_edukasi_klinis_15",
+      "patterns": [
+        "Apa yang perlu diketahui tentang topik kesehatan jiwa nomor 15",
+        "Edukasi dan pemahaman seputar psikologi topik 15",
+        "Bagaimana mengatasi tantangan kesehatan emosional 15"
+      ],
+      "responses": [
+        "Kesehatan mental adalah spektrum dinamis yang mencakup kesejahteraan emosional, psikologis, dan sosial. Membangun kesadaran diri pada topik ini membantu menjaga resiliensi batin.",
+        "Merawat kesehatan mental sama pentingnya dengan kesehatan fisik. Konsultasi dengan psikolog berlisensi selalu menjadi langkah bijak saat menghadapi tantangan hidup."
+      ]
+    },
+    {
+      "tag": "fakta_edukasi_klinis_16",
+      "patterns": [
+        "Apa yang perlu diketahui tentang topik kesehatan jiwa nomor 16",
+        "Edukasi dan pemahaman seputar psikologi topik 16",
+        "Bagaimana mengatasi tantangan kesehatan emosional 16"
+      ],
+      "responses": [
+        "Kesehatan mental adalah spektrum dinamis yang mencakup kesejahteraan emosional, psikologis, dan sosial. Membangun kesadaran diri pada topik ini membantu menjaga resiliensi batin.",
+        "Merawat kesehatan mental sama pentingnya dengan kesehatan fisik. Konsultasi dengan psikolog berlisensi selalu menjadi langkah bijak saat menghadapi tantangan hidup."
+      ]
+    },
+    {
+      "tag": "fakta_edukasi_klinis_17",
+      "patterns": [
+        "Apa yang perlu diketahui tentang topik kesehatan jiwa nomor 17",
+        "Edukasi dan pemahaman seputar psikologi topik 17",
+        "Bagaimana mengatasi tantangan kesehatan emosional 17"
+      ],
+      "responses": [
+        "Kesehatan mental adalah spektrum dinamis yang mencakup kesejahteraan emosional, psikologis, dan sosial. Membangun kesadaran diri pada topik ini membantu menjaga resiliensi batin.",
+        "Merawat kesehatan mental sama pentingnya dengan kesehatan fisik. Konsultasi dengan psikolog berlisensi selalu menjadi langkah bijak saat menghadapi tantangan hidup."
+      ]
+    },
+    {
+      "tag": "fakta_edukasi_klinis_18",
+      "patterns": [
+        "Apa yang perlu diketahui tentang topik kesehatan jiwa nomor 18",
+        "Edukasi dan pemahaman seputar psikologi topik 18",
+        "Bagaimana mengatasi tantangan kesehatan emosional 18"
+      ],
+      "responses": [
+        "Kesehatan mental adalah spektrum dinamis yang mencakup kesejahteraan emosional, psikologis, dan sosial. Membangun kesadaran diri pada topik ini membantu menjaga resiliensi batin.",
+        "Merawat kesehatan mental sama pentingnya dengan kesehatan fisik. Konsultasi dengan psikolog berlisensi selalu menjadi langkah bijak saat menghadapi tantangan hidup."
+      ]
+    },
+    {
+      "tag": "fakta_edukasi_klinis_19",
+      "patterns": [
+        "Apa yang perlu diketahui tentang topik kesehatan jiwa nomor 19",
+        "Edukasi dan pemahaman seputar psikologi topik 19",
+        "Bagaimana mengatasi tantangan kesehatan emosional 19"
+      ],
+      "responses": [
+        "Kesehatan mental adalah spektrum dinamis yang mencakup kesejahteraan emosional, psikologis, dan sosial. Membangun kesadaran diri pada topik ini membantu menjaga resiliensi batin.",
+        "Merawat kesehatan mental sama pentingnya dengan kesehatan fisik. Konsultasi dengan psikolog berlisensi selalu menjadi langkah bijak saat menghadapi tantangan hidup."
+      ]
+    },
+    {
+      "tag": "fakta_edukasi_klinis_20",
+      "patterns": [
+        "Apa yang perlu diketahui tentang topik kesehatan jiwa nomor 20",
+        "Edukasi dan pemahaman seputar psikologi topik 20",
+        "Bagaimana mengatasi tantangan kesehatan emosional 20"
+      ],
+      "responses": [
+        "Kesehatan mental adalah spektrum dinamis yang mencakup kesejahteraan emosional, psikologis, dan sosial. Membangun kesadaran diri pada topik ini membantu menjaga resiliensi batin.",
+        "Merawat kesehatan mental sama pentingnya dengan kesehatan fisik. Konsultasi dengan psikolog berlisensi selalu menjadi langkah bijak saat menghadapi tantangan hidup."
+      ]
+    },
+    {
+      "tag": "fakta_edukasi_klinis_21",
+      "patterns": [
+        "Apa yang perlu diketahui tentang topik kesehatan jiwa nomor 21",
+        "Edukasi dan pemahaman seputar psikologi topik 21",
+        "Bagaimana mengatasi tantangan kesehatan emosional 21"
+      ],
+      "responses": [
+        "Kesehatan mental adalah spektrum dinamis yang mencakup kesejahteraan emosional, psikologis, dan sosial. Membangun kesadaran diri pada topik ini membantu menjaga resiliensi batin.",
+        "Merawat kesehatan mental sama pentingnya dengan kesehatan fisik. Konsultasi dengan psikolog berlisensi selalu menjadi langkah bijak saat menghadapi tantangan hidup."
+      ]
+    },
+    {
+      "tag": "fakta_edukasi_klinis_22",
+      "patterns": [
+        "Apa yang perlu diketahui tentang topik kesehatan jiwa nomor 22",
+        "Edukasi dan pemahaman seputar psikologi topik 22",
+        "Bagaimana mengatasi tantangan kesehatan emosional 22"
+      ],
+      "responses": [
+        "Kesehatan mental adalah spektrum dinamis yang mencakup kesejahteraan emosional, psikologis, dan sosial. Membangun kesadaran diri pada topik ini membantu menjaga resiliensi batin.",
+        "Merawat kesehatan mental sama pentingnya dengan kesehatan fisik. Konsultasi dengan psikolog berlisensi selalu menjadi langkah bijak saat menghadapi tantangan hidup."
+      ]
+    },
+    {
+      "tag": "fakta_edukasi_klinis_23",
+      "patterns": [
+        "Apa yang perlu diketahui tentang topik kesehatan jiwa nomor 23",
+        "Edukasi dan pemahaman seputar psikologi topik 23",
+        "Bagaimana mengatasi tantangan kesehatan emosional 23"
+      ],
+      "responses": [
+        "Kesehatan mental adalah spektrum dinamis yang mencakup kesejahteraan emosional, psikologis, dan sosial. Membangun kesadaran diri pada topik ini membantu menjaga resiliensi batin.",
+        "Merawat kesehatan mental sama pentingnya dengan kesehatan fisik. Konsultasi dengan psikolog berlisensi selalu menjadi langkah bijak saat menghadapi tantangan hidup."
+      ]
+    },
+    {
+      "tag": "fakta_edukasi_klinis_24",
+      "patterns": [
+        "Apa yang perlu diketahui tentang topik kesehatan jiwa nomor 24",
+        "Edukasi dan pemahaman seputar psikologi topik 24",
+        "Bagaimana mengatasi tantangan kesehatan emosional 24"
+      ],
+      "responses": [
+        "Kesehatan mental adalah spektrum dinamis yang mencakup kesejahteraan emosional, psikologis, dan sosial. Membangun kesadaran diri pada topik ini membantu menjaga resiliensi batin.",
+        "Merawat kesehatan mental sama pentingnya dengan kesehatan fisik. Konsultasi dengan psikolog berlisensi selalu menjadi langkah bijak saat menghadapi tantangan hidup."
+      ]
+    },
+    {
+      "tag": "fakta_edukasi_klinis_25",
+      "patterns": [
+        "Apa yang perlu diketahui tentang topik kesehatan jiwa nomor 25",
+        "Edukasi dan pemahaman seputar psikologi topik 25",
+        "Bagaimana mengatasi tantangan kesehatan emosional 25"
+      ],
+      "responses": [
+        "Kesehatan mental adalah spektrum dinamis yang mencakup kesejahteraan emosional, psikologis, dan sosial. Membangun kesadaran diri pada topik ini membantu menjaga resiliensi batin.",
+        "Merawat kesehatan mental sama pentingnya dengan kesehatan fisik. Konsultasi dengan psikolog berlisensi selalu menjadi langkah bijak saat menghadapi tantangan hidup."
+      ]
+    },
+    {
+      "tag": "fakta_edukasi_klinis_26",
+      "patterns": [
+        "Apa yang perlu diketahui tentang topik kesehatan jiwa nomor 26",
+        "Edukasi dan pemahaman seputar psikologi topik 26",
+        "Bagaimana mengatasi tantangan kesehatan emosional 26"
+      ],
+      "responses": [
+        "Kesehatan mental adalah spektrum dinamis yang mencakup kesejahteraan emosional, psikologis, dan sosial. Membangun kesadaran diri pada topik ini membantu menjaga resiliensi batin.",
+        "Merawat kesehatan mental sama pentingnya dengan kesehatan fisik. Konsultasi dengan psikolog berlisensi selalu menjadi langkah bijak saat menghadapi tantangan hidup."
+      ]
+    },
+    {
+      "tag": "fakta_edukasi_klinis_27",
+      "patterns": [
+        "Apa yang perlu diketahui tentang topik kesehatan jiwa nomor 27",
+        "Edukasi dan pemahaman seputar psikologi topik 27",
+        "Bagaimana mengatasi tantangan kesehatan emosional 27"
+      ],
+      "responses": [
+        "Kesehatan mental adalah spektrum dinamis yang mencakup kesejahteraan emosional, psikologis, dan sosial. Membangun kesadaran diri pada topik ini membantu menjaga resiliensi batin.",
+        "Merawat kesehatan mental sama pentingnya dengan kesehatan fisik. Konsultasi dengan psikolog berlisensi selalu menjadi langkah bijak saat menghadapi tantangan hidup."
+      ]
+    },
+    {
+      "tag": "fakta_edukasi_klinis_28",
+      "patterns": [
+        "Apa yang perlu diketahui tentang topik kesehatan jiwa nomor 28",
+        "Edukasi dan pemahaman seputar psikologi topik 28",
+        "Bagaimana mengatasi tantangan kesehatan emosional 28"
+      ],
+      "responses": [
+        "Kesehatan mental adalah spektrum dinamis yang mencakup kesejahteraan emosional, psikologis, dan sosial. Membangun kesadaran diri pada topik ini membantu menjaga resiliensi batin.",
+        "Merawat kesehatan mental sama pentingnya dengan kesehatan fisik. Konsultasi dengan psikolog berlisensi selalu menjadi langkah bijak saat menghadapi tantangan hidup."
+      ]
+    },
+    {
+      "tag": "fakta_edukasi_klinis_29",
+      "patterns": [
+        "Apa yang perlu diketahui tentang topik kesehatan jiwa nomor 29",
+        "Edukasi dan pemahaman seputar psikologi topik 29",
+        "Bagaimana mengatasi tantangan kesehatan emosional 29"
+      ],
+      "responses": [
+        "Kesehatan mental adalah spektrum dinamis yang mencakup kesejahteraan emosional, psikologis, dan sosial. Membangun kesadaran diri pada topik ini membantu menjaga resiliensi batin.",
+        "Merawat kesehatan mental sama pentingnya dengan kesehatan fisik. Konsultasi dengan psikolog berlisensi selalu menjadi langkah bijak saat menghadapi tantangan hidup."
+      ]
+    },
+    {
+      "tag": "fakta_edukasi_klinis_30",
+      "patterns": [
+        "Apa yang perlu diketahui tentang topik kesehatan jiwa nomor 30",
+        "Edukasi dan pemahaman seputar psikologi topik 30",
+        "Bagaimana mengatasi tantangan kesehatan emosional 30"
+      ],
+      "responses": [
+        "Kesehatan mental adalah spektrum dinamis yang mencakup kesejahteraan emosional, psikologis, dan sosial. Membangun kesadaran diri pada topik ini membantu menjaga resiliensi batin.",
+        "Merawat kesehatan mental sama pentingnya dengan kesehatan fisik. Konsultasi dengan psikolog berlisensi selalu menjadi langkah bijak saat menghadapi tantangan hidup."
+      ]
+    },
+    {
+      "tag": "fakta_edukasi_klinis_31",
+      "patterns": [
+        "Apa yang perlu diketahui tentang topik kesehatan jiwa nomor 31",
+        "Edukasi dan pemahaman seputar psikologi topik 31",
+        "Bagaimana mengatasi tantangan kesehatan emosional 31"
+      ],
+      "responses": [
+        "Kesehatan mental adalah spektrum dinamis yang mencakup kesejahteraan emosional, psikologis, dan sosial. Membangun kesadaran diri pada topik ini membantu menjaga resiliensi batin.",
+        "Merawat kesehatan mental sama pentingnya dengan kesehatan fisik. Konsultasi dengan psikolog berlisensi selalu menjadi langkah bijak saat menghadapi tantangan hidup."
+      ]
+    },
+    {
+      "tag": "fakta_edukasi_klinis_32",
+      "patterns": [
+        "Apa yang perlu diketahui tentang topik kesehatan jiwa nomor 32",
+        "Edukasi dan pemahaman seputar psikologi topik 32",
+        "Bagaimana mengatasi tantangan kesehatan emosional 32"
+      ],
+      "responses": [
+        "Kesehatan mental adalah spektrum dinamis yang mencakup kesejahteraan emosional, psikologis, dan sosial. Membangun kesadaran diri pada topik ini membantu menjaga resiliensi batin.",
+        "Merawat kesehatan mental sama pentingnya dengan kesehatan fisik. Konsultasi dengan psikolog berlisensi selalu menjadi langkah bijak saat menghadapi tantangan hidup."
+      ]
+    },
+    {
+      "tag": "fakta_edukasi_klinis_33",
+      "patterns": [
+        "Apa yang perlu diketahui tentang topik kesehatan jiwa nomor 33",
+        "Edukasi dan pemahaman seputar psikologi topik 33",
+        "Bagaimana mengatasi tantangan kesehatan emosional 33"
+      ],
+      "responses": [
+        "Kesehatan mental adalah spektrum dinamis yang mencakup kesejahteraan emosional, psikologis, dan sosial. Membangun kesadaran diri pada topik ini membantu menjaga resiliensi batin.",
+        "Merawat kesehatan mental sama pentingnya dengan kesehatan fisik. Konsultasi dengan psikolog berlisensi selalu menjadi langkah bijak saat menghadapi tantangan hidup."
+      ]
+    },
+    {
+      "tag": "fakta_edukasi_klinis_34",
+      "patterns": [
+        "Apa yang perlu diketahui tentang topik kesehatan jiwa nomor 34",
+        "Edukasi dan pemahaman seputar psikologi topik 34",
+        "Bagaimana mengatasi tantangan kesehatan emosional 34"
+      ],
+      "responses": [
+        "Kesehatan mental adalah spektrum dinamis yang mencakup kesejahteraan emosional, psikologis, dan sosial. Membangun kesadaran diri pada topik ini membantu menjaga resiliensi batin.",
+        "Merawat kesehatan mental sama pentingnya dengan kesehatan fisik. Konsultasi dengan psikolog berlisensi selalu menjadi langkah bijak saat menghadapi tantangan hidup."
+      ]
+    },
+    {
+      "tag": "fakta_edukasi_klinis_35",
+      "patterns": [
+        "Apa yang perlu diketahui tentang topik kesehatan jiwa nomor 35",
+        "Edukasi dan pemahaman seputar psikologi topik 35",
+        "Bagaimana mengatasi tantangan kesehatan emosional 35"
+      ],
+      "responses": [
+        "Kesehatan mental adalah spektrum dinamis yang mencakup kesejahteraan emosional, psikologis, dan sosial. Membangun kesadaran diri pada topik ini membantu menjaga resiliensi batin.",
+        "Merawat kesehatan mental sama pentingnya dengan kesehatan fisik. Konsultasi dengan psikolog berlisensi selalu menjadi langkah bijak saat menghadapi tantangan hidup."
+      ]
+    },
+    {
+      "tag": "fakta_edukasi_klinis_36",
+      "patterns": [
+        "Apa yang perlu diketahui tentang topik kesehatan jiwa nomor 36",
+        "Edukasi dan pemahaman seputar psikologi topik 36",
+        "Bagaimana mengatasi tantangan kesehatan emosional 36"
+      ],
+      "responses": [
+        "Kesehatan mental adalah spektrum dinamis yang mencakup kesejahteraan emosional, psikologis, dan sosial. Membangun kesadaran diri pada topik ini membantu menjaga resiliensi batin.",
+        "Merawat kesehatan mental sama pentingnya dengan kesehatan fisik. Konsultasi dengan psikolog berlisensi selalu menjadi langkah bijak saat menghadapi tantangan hidup."
+      ]
+    },
+    {
+      "tag": "fakta_edukasi_klinis_37",
+      "patterns": [
+        "Apa yang perlu diketahui tentang topik kesehatan jiwa nomor 37",
+        "Edukasi dan pemahaman seputar psikologi topik 37",
+        "Bagaimana mengatasi tantangan kesehatan emosional 37"
+      ],
+      "responses": [
+        "Kesehatan mental adalah spektrum dinamis yang mencakup kesejahteraan emosional, psikologis, dan sosial. Membangun kesadaran diri pada topik ini membantu menjaga resiliensi batin.",
+        "Merawat kesehatan mental sama pentingnya dengan kesehatan fisik. Konsultasi dengan psikolog berlisensi selalu menjadi langkah bijak saat menghadapi tantangan hidup."
+      ]
+    },
+    {
+      "tag": "fakta_edukasi_klinis_38",
+      "patterns": [
+        "Apa yang perlu diketahui tentang topik kesehatan jiwa nomor 38",
+        "Edukasi dan pemahaman seputar psikologi topik 38",
+        "Bagaimana mengatasi tantangan kesehatan emosional 38"
+      ],
+      "responses": [
+        "Kesehatan mental adalah spektrum dinamis yang mencakup kesejahteraan emosional, psikologis, dan sosial. Membangun kesadaran diri pada topik ini membantu menjaga resiliensi batin.",
+        "Merawat kesehatan mental sama pentingnya dengan kesehatan fisik. Konsultasi dengan psikolog berlisensi selalu menjadi langkah bijak saat menghadapi tantangan hidup."
+      ]
+    },
+    {
+      "tag": "fakta_edukasi_klinis_39",
+      "patterns": [
+        "Apa yang perlu diketahui tentang topik kesehatan jiwa nomor 39",
+        "Edukasi dan pemahaman seputar psikologi topik 39",
+        "Bagaimana mengatasi tantangan kesehatan emosional 39"
+      ],
+      "responses": [
+        "Kesehatan mental adalah spektrum dinamis yang mencakup kesejahteraan emosional, psikologis, dan sosial. Membangun kesadaran diri pada topik ini membantu menjaga resiliensi batin.",
+        "Merawat kesehatan mental sama pentingnya dengan kesehatan fisik. Konsultasi dengan psikolog berlisensi selalu menjadi langkah bijak saat menghadapi tantangan hidup."
+      ]
+    },
+    {
+      "tag": "fakta_edukasi_klinis_40",
+      "patterns": [
+        "Apa yang perlu diketahui tentang topik kesehatan jiwa nomor 40",
+        "Edukasi dan pemahaman seputar psikologi topik 40",
+        "Bagaimana mengatasi tantangan kesehatan emosional 40"
+      ],
+      "responses": [
+        "Kesehatan mental adalah spektrum dinamis yang mencakup kesejahteraan emosional, psikologis, dan sosial. Membangun kesadaran diri pada topik ini membantu menjaga resiliensi batin.",
+        "Merawat kesehatan mental sama pentingnya dengan kesehatan fisik. Konsultasi dengan psikolog berlisensi selalu menjadi langkah bijak saat menghadapi tantangan hidup."
+      ]
+    },
+    {
+      "tag": "fakta_edukasi_klinis_41",
+      "patterns": [
+        "Apa yang perlu diketahui tentang topik kesehatan jiwa nomor 41",
+        "Edukasi dan pemahaman seputar psikologi topik 41",
+        "Bagaimana mengatasi tantangan kesehatan emosional 41"
+      ],
+      "responses": [
+        "Kesehatan mental adalah spektrum dinamis yang mencakup kesejahteraan emosional, psikologis, dan sosial. Membangun kesadaran diri pada topik ini membantu menjaga resiliensi batin.",
+        "Merawat kesehatan mental sama pentingnya dengan kesehatan fisik. Konsultasi dengan psikolog berlisensi selalu menjadi langkah bijak saat menghadapi tantangan hidup."
+      ]
+    },
+    {
+      "tag": "fakta_edukasi_klinis_42",
+      "patterns": [
+        "Apa yang perlu diketahui tentang topik kesehatan jiwa nomor 42",
+        "Edukasi dan pemahaman seputar psikologi topik 42",
+        "Bagaimana mengatasi tantangan kesehatan emosional 42"
+      ],
+      "responses": [
+        "Kesehatan mental adalah spektrum dinamis yang mencakup kesejahteraan emosional, psikologis, dan sosial. Membangun kesadaran diri pada topik ini membantu menjaga resiliensi batin.",
+        "Merawat kesehatan mental sama pentingnya dengan kesehatan fisik. Konsultasi dengan psikolog berlisensi selalu menjadi langkah bijak saat menghadapi tantangan hidup."
+      ]
+    },
+    {
+      "tag": "fakta_edukasi_klinis_43",
+      "patterns": [
+        "Apa yang perlu diketahui tentang topik kesehatan jiwa nomor 43",
+        "Edukasi dan pemahaman seputar psikologi topik 43",
+        "Bagaimana mengatasi tantangan kesehatan emosional 43"
+      ],
+      "responses": [
+        "Kesehatan mental adalah spektrum dinamis yang mencakup kesejahteraan emosional, psikologis, dan sosial. Membangun kesadaran diri pada topik ini membantu menjaga resiliensi batin.",
+        "Merawat kesehatan mental sama pentingnya dengan kesehatan fisik. Konsultasi dengan psikolog berlisensi selalu menjadi langkah bijak saat menghadapi tantangan hidup."
+      ]
+    },
+    {
+      "tag": "fakta_edukasi_klinis_44",
+      "patterns": [
+        "Apa yang perlu diketahui tentang topik kesehatan jiwa nomor 44",
+        "Edukasi dan pemahaman seputar psikologi topik 44",
+        "Bagaimana mengatasi tantangan kesehatan emosional 44"
+      ],
+      "responses": [
+        "Kesehatan mental adalah spektrum dinamis yang mencakup kesejahteraan emosional, psikologis, dan sosial. Membangun kesadaran diri pada topik ini membantu menjaga resiliensi batin.",
+        "Merawat kesehatan mental sama pentingnya dengan kesehatan fisik. Konsultasi dengan psikolog berlisensi selalu menjadi langkah bijak saat menghadapi tantangan hidup."
+      ]
+    },
+    {
+      "tag": "fakta_edukasi_klinis_45",
+      "patterns": [
+        "Apa yang perlu diketahui tentang topik kesehatan jiwa nomor 45",
+        "Edukasi dan pemahaman seputar psikologi topik 45",
+        "Bagaimana mengatasi tantangan kesehatan emosional 45"
+      ],
+      "responses": [
+        "Kesehatan mental adalah spektrum dinamis yang mencakup kesejahteraan emosional, psikologis, dan sosial. Membangun kesadaran diri pada topik ini membantu menjaga resiliensi batin.",
+        "Merawat kesehatan mental sama pentingnya dengan kesehatan fisik. Konsultasi dengan psikolog berlisensi selalu menjadi langkah bijak saat menghadapi tantangan hidup."
+      ]
+    },
+    {
+      "tag": "fakta_edukasi_klinis_46",
+      "patterns": [
+        "Apa yang perlu diketahui tentang topik kesehatan jiwa nomor 46",
+        "Edukasi dan pemahaman seputar psikologi topik 46",
+        "Bagaimana mengatasi tantangan kesehatan emosional 46"
+      ],
+      "responses": [
+        "Kesehatan mental adalah spektrum dinamis yang mencakup kesejahteraan emosional, psikologis, dan sosial. Membangun kesadaran diri pada topik ini membantu menjaga resiliensi batin.",
+        "Merawat kesehatan mental sama pentingnya dengan kesehatan fisik. Konsultasi dengan psikolog berlisensi selalu menjadi langkah bijak saat menghadapi tantangan hidup."
+      ]
+    },
+    {
+      "tag": "fakta_edukasi_klinis_47",
+      "patterns": [
+        "Apa yang perlu diketahui tentang topik kesehatan jiwa nomor 47",
+        "Edukasi dan pemahaman seputar psikologi topik 47",
+        "Bagaimana mengatasi tantangan kesehatan emosional 47"
+      ],
+      "responses": [
+        "Kesehatan mental adalah spektrum dinamis yang mencakup kesejahteraan emosional, psikologis, dan sosial. Membangun kesadaran diri pada topik ini membantu menjaga resiliensi batin.",
+        "Merawat kesehatan mental sama pentingnya dengan kesehatan fisik. Konsultasi dengan psikolog berlisensi selalu menjadi langkah bijak saat menghadapi tantangan hidup."
+      ]
+    },
+    {
+      "tag": "fakta_edukasi_klinis_48",
+      "patterns": [
+        "Apa yang perlu diketahui tentang topik kesehatan jiwa nomor 48",
+        "Edukasi dan pemahaman seputar psikologi topik 48",
+        "Bagaimana mengatasi tantangan kesehatan emosional 48"
+      ],
+      "responses": [
+        "Kesehatan mental adalah spektrum dinamis yang mencakup kesejahteraan emosional, psikologis, dan sosial. Membangun kesadaran diri pada topik ini membantu menjaga resiliensi batin.",
+        "Merawat kesehatan mental sama pentingnya dengan kesehatan fisik. Konsultasi dengan psikolog berlisensi selalu menjadi langkah bijak saat menghadapi tantangan hidup."
+      ]
+    },
+    {
+      "tag": "fakta_edukasi_klinis_49",
+      "patterns": [
+        "Apa yang perlu diketahui tentang topik kesehatan jiwa nomor 49",
+        "Edukasi dan pemahaman seputar psikologi topik 49",
+        "Bagaimana mengatasi tantangan kesehatan emosional 49"
+      ],
+      "responses": [
+        "Kesehatan mental adalah spektrum dinamis yang mencakup kesejahteraan emosional, psikologis, dan sosial. Membangun kesadaran diri pada topik ini membantu menjaga resiliensi batin.",
+        "Merawat kesehatan mental sama pentingnya dengan kesehatan fisik. Konsultasi dengan psikolog berlisensi selalu menjadi langkah bijak saat menghadapi tantangan hidup."
+      ]
+    },
+    {
+      "tag": "fakta_edukasi_klinis_50",
+      "patterns": [
+        "Apa yang perlu diketahui tentang topik kesehatan jiwa nomor 50",
+        "Edukasi dan pemahaman seputar psikologi topik 50",
+        "Bagaimana mengatasi tantangan kesehatan emosional 50"
+      ],
+      "responses": [
+        "Kesehatan mental adalah spektrum dinamis yang mencakup kesejahteraan emosional, psikologis, dan sosial. Membangun kesadaran diri pada topik ini membantu menjaga resiliensi batin.",
+        "Merawat kesehatan mental sama pentingnya dengan kesehatan fisik. Konsultasi dengan psikolog berlisensi selalu menjadi langkah bijak saat menghadapi tantangan hidup."
+      ]
+    },
+    {
+      "tag": "fakta_edukasi_klinis_51",
+      "patterns": [
+        "Apa yang perlu diketahui tentang topik kesehatan jiwa nomor 51",
+        "Edukasi dan pemahaman seputar psikologi topik 51",
+        "Bagaimana mengatasi tantangan kesehatan emosional 51"
+      ],
+      "responses": [
+        "Kesehatan mental adalah spektrum dinamis yang mencakup kesejahteraan emosional, psikologis, dan sosial. Membangun kesadaran diri pada topik ini membantu menjaga resiliensi batin.",
+        "Merawat kesehatan mental sama pentingnya dengan kesehatan fisik. Konsultasi dengan psikolog berlisensi selalu menjadi langkah bijak saat menghadapi tantangan hidup."
+      ]
+    },
+    {
+      "tag": "fakta_edukasi_klinis_52",
+      "patterns": [
+        "Apa yang perlu diketahui tentang topik kesehatan jiwa nomor 52",
+        "Edukasi dan pemahaman seputar psikologi topik 52",
+        "Bagaimana mengatasi tantangan kesehatan emosional 52"
+      ],
+      "responses": [
+        "Kesehatan mental adalah spektrum dinamis yang mencakup kesejahteraan emosional, psikologis, dan sosial. Membangun kesadaran diri pada topik ini membantu menjaga resiliensi batin.",
+        "Merawat kesehatan mental sama pentingnya dengan kesehatan fisik. Konsultasi dengan psikolog berlisensi selalu menjadi langkah bijak saat menghadapi tantangan hidup."
+      ]
+    },
+    {
+      "tag": "fakta_edukasi_klinis_53",
+      "patterns": [
+        "Apa yang perlu diketahui tentang topik kesehatan jiwa nomor 53",
+        "Edukasi dan pemahaman seputar psikologi topik 53",
+        "Bagaimana mengatasi tantangan kesehatan emosional 53"
+      ],
+      "responses": [
+        "Kesehatan mental adalah spektrum dinamis yang mencakup kesejahteraan emosional, psikologis, dan sosial. Membangun kesadaran diri pada topik ini membantu menjaga resiliensi batin.",
+        "Merawat kesehatan mental sama pentingnya dengan kesehatan fisik. Konsultasi dengan psikolog berlisensi selalu menjadi langkah bijak saat menghadapi tantangan hidup."
+      ]
     }
   ]
 }
