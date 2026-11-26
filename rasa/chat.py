@@ -28,10 +28,12 @@ try:
     from demo import load_model_and_pool, query_counselor
     from slang_normalizer import normalize_slang
     from response_builder import build_atomic_response
+    from knowledge_graph import ClinicalKnowledgeGraph
 except ImportError:
     from demo import load_model_and_pool, query_counselor
     from src.slang_normalizer import normalize_slang
     from src.response_builder import build_atomic_response
+    from src.knowledge_graph import ClinicalKnowledgeGraph
 
 # 1. Deterministic Crisis Regex Safeguard
 CRISIS_KEYWORDS = [
@@ -147,14 +149,20 @@ def run_chatbot():
         except Exception as e:
             print(f"[!] FAISS index warning: {e}, menggunakan fallback pool.")
 
+    # Initialize Indonesian Psychiatric Clinical Knowledge Graph
+    kg = ClinicalKnowledgeGraph()
+    print("[✓] Psychiatric Knowledge Graph Aktif (Ontologi Gangguan & Distorsi Kognitif).")
+
     memory = DialogueMemory(max_history=3)
 
     print("\n[✓] IndoMentalBERT siap berdiskusi!")
     print("Fitur aktif:")
     print("  • Mesin Pencari Vektor FAISS Sub-milisecond (Non-Generatif, Aman)")
+    print("  • Indonesian Psychiatric Knowledge Graph (Symptom-to-Diagnosis Reasoning)")
     print("  • Normalisasi bahasa gaul / singkatan (gw, bgt, ga bs, overthinking)")
     print("  • Memori percakapan multi-turn (kontekstual)")
     print("  • Rekomendasi klinis modular 3-tier (Validasi + Insight + Solusi)")
+    print("  • [Tips Peneliti] Ketik '/diag' di awal pesan untuk melihat Clinical Reasoning XAI!")
     print("Ketik pesanmu di bawah ini (atau ketik 'keluar' / 'exit' untuk selesai):\n")
 
     while True:
@@ -171,20 +179,30 @@ def run_chatbot():
             print("\nIndoMentalBERT > Terima kasih telah meluangkan waktu berbagi. Jaga dirimu baik-baik!\n")
             break
 
+        # Check Researcher Diagnostic Mode Flag
+        explain_mode = False
+        active_input = raw_user_input
+        if raw_user_input.startswith("/diag"):
+            explain_mode = True
+            active_input = raw_user_input[5:].strip()
+
         # Step 1: Check Deterministic Safety Rules
-        rule_reply = check_hardcoded_rules(raw_user_input)
+        rule_reply = check_hardcoded_rules(active_input)
         if rule_reply:
             print(f"\nIndoMentalBERT >\n{rule_reply}\n")
-            memory.add_turn(raw_user_input, rule_reply)
+            memory.add_turn(active_input, rule_reply)
             continue
 
         # Step 2: Slang & Colloquial Normalization
-        normalized_input = normalize_slang(raw_user_input)
+        normalized_input = normalize_slang(active_input)
 
         # Step 3: Multi-Turn Context Fusion
         contextual_query = memory.get_contextual_query(normalized_input)
 
-        # Step 4: Semantic Matching (FAISS Vector Search or Fallback)
+        # Step 4: Knowledge Graph Reasoning (Ontology & Cognitive Distortions)
+        kg_diag = kg.reason(contextual_query)
+
+        # Step 5: Semantic Matching (FAISS Vector Search or Fallback)
         raw_response = None
         score = 0.0
 
@@ -211,15 +229,27 @@ def run_chatbot():
                 raw_response, score = matches[0]
 
         if raw_response:
-            # Step 5: Modular Atomic Response Assembly
-            atomic_reply = build_atomic_response(raw_user_input, raw_response, score)
+            # Step 6: Modular Atomic Response Assembly
+            atomic_reply = build_atomic_response(active_input, raw_response, score)
+            
+            # If in Researcher Diagnostic Mode (/diag), output clinical reasoning metadata
+            if explain_mode:
+                print("\n🔬 [RESEARCHER CLINICAL REASONING XAI]")
+                print(f"  • Tingkat Risiko Klinis : {kg_diag['risk_level']}")
+                print(f"  • Kategori Psikiatrik  : {kg_diag['disorder']}")
+                print(f"  • Gejala Somatik/Afektif: {', '.join(kg_diag['symptoms_found']) if kg_diag['symptoms_found'] else 'Keluhan non-spesifik'}")
+                print(f"  • Distorsi Kognitif     : {', '.join(kg_diag['cognitive_distortions'])}")
+                print(f"  • Intervensi Klinis     : {kg_diag['clinical_intervention']['technique']}")
+                print(f"  • Rationale Medis       : {kg_diag['clinical_intervention']['clinical_rationale']}")
+                print(f"  • Skor FAISS Alignment  : {score*100:.2f}%\n")
+
             print(f"\nIndoMentalBERT [Kesesuaian: {score*100:.1f}%] >")
             print(f"{atomic_reply}\n")
-            memory.add_turn(raw_user_input, atomic_reply)
+            memory.add_turn(active_input, atomic_reply)
         else:
             fallback = "Saya memahami ini hal yang tidak mudah. Bisa tolong ceritakan sedikit lebih banyak agar saya bisa memahamimu dengan lebih baik?"
             print(f"\nIndoMentalBERT >\n{fallback}\n")
-            memory.add_turn(raw_user_input, fallback)
+            memory.add_turn(active_input, fallback)
 
 
 if __name__ == "__main__":

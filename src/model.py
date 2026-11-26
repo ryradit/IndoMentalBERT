@@ -35,14 +35,20 @@ class FFN(nn.Module):
 
 class IndoMentalBERT(nn.Module):
     """
-    Dual-Encoder Architecture for Indonesian Mental Health Query-Answer Matching.
-    Base encoder: indobenchmark/indobert-base-p1
+    Multi-Task Siamese Dual-Encoder for Indonesian Mental Health.
+    Hard Parameter Sharing Architecture:
+    1. Base Encoder: Shared Transformer (indobenchmark/indobert-base-p1)
+    2. Head 1 (Retrieval Matching): Query & Answer FFN projection for Cosine Similarity.
+    3. Head 2 (Clinical Risk Triage): 5-class severity classification (Low, Mild, Moderate, Severe, Emergency).
+    4. Head 3 (Cognitive Distortion Detector): Multi-label distortion classification.
     """
     def __init__(
         self,
         model_name: str = "indobenchmark/indobert-base-p1",
         freeze_bert: bool = False,
-        dropout_rate: float = 0.2
+        dropout_rate: float = 0.2,
+        num_risk_classes: int = 5,
+        num_distortion_classes: int = 6
     ):
         super(IndoMentalBERT, self).__init__()
         self.model_name = model_name
@@ -58,8 +64,26 @@ class IndoMentalBERT(nn.Module):
                 param.requires_grad = False
 
         hidden_size = self.bert.config.hidden_size
+        
+        # Head 1: Semantic Retrieval Projection Heads (Siamese Q&A)
         self.q_ffn = FFN(hidden_size=hidden_size, dropout_rate=dropout_rate)
         self.a_ffn = FFN(hidden_size=hidden_size, dropout_rate=dropout_rate)
+
+        # Head 2: Multi-Task Clinical Severity / Risk Triaging Head
+        self.risk_classifier = nn.Sequential(
+            nn.Linear(hidden_size, 256),
+            nn.ReLU(),
+            nn.Dropout(dropout_rate),
+            nn.Linear(256, num_risk_classes)
+        )
+
+        # Head 3: Multi-Task Cognitive Distortion Diagnostic Head
+        self.distortion_classifier = nn.Sequential(
+            nn.Linear(hidden_size, 256),
+            nn.ReLU(),
+            nn.Dropout(dropout_rate),
+            nn.Linear(256, num_distortion_classes)
+        )
 
     def encode_text(self, input_ids: torch.Tensor, attention_mask: torch.Tensor, is_question: bool = True) -> torch.Tensor:
         outputs = self.bert(input_ids=input_ids, attention_mask=attention_mask)
@@ -72,6 +96,14 @@ class IndoMentalBERT(nn.Module):
         # L2 normalize embeddings
         emb = F.normalize(emb, p=2, dim=1)
         return emb
+
+    def predict_clinical_triage(self, input_ids: torch.Tensor, attention_mask: torch.Tensor):
+        """Forward pass for multi-task clinical triaging and cognitive distortion classification."""
+        outputs = self.bert(input_ids=input_ids, attention_mask=attention_mask)
+        cls_rep = outputs.pooler_output
+        risk_logits = self.risk_classifier(cls_rep)
+        distortion_logits = self.distortion_classifier(cls_rep)
+        return risk_logits, distortion_logits
 
     def forward(
         self,
