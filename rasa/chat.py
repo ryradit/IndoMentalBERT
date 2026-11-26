@@ -22,6 +22,8 @@ for p in (PROJECT_ROOT, os.path.join(PROJECT_ROOT, "src")):
     if p not in sys.path:
         sys.path.insert(0, p)
 
+import faiss
+
 try:
     from demo import load_model_and_pool, query_counselor
     from slang_normalizer import normalize_slang
@@ -114,12 +116,14 @@ def check_hardcoded_rules(text: str):
 
 def run_chatbot():
     print("=" * 70)
-    print("🧠 INDOMENTALBERT SMART CLINICAL AGENT (MULTI-TURN + ATOMIC ADVICE)")
+    print("🧠 INDOMENTALBERT SMART CLINICAL AGENT (FAISS + MULTI-TURN + ATOMIC)")
     print("=" * 70)
     print("Memuat model dan basis data konseling...")
 
     ckpt_path = os.path.join(PROJECT_ROOT, "outputs", "indomentalbert", "indomentalbert_best.pt")
     csv_path = os.path.join(PROJECT_ROOT, "data.csv")
+    faiss_path = os.path.join(PROJECT_ROOT, "outputs", "indomentalbert", "counseling_index.faiss")
+    catalog_path = os.path.join(PROJECT_ROOT, "outputs", "indomentalbert", "response_catalog.json")
 
     try:
         model, tokenizer, candidate_pool, device = load_model_and_pool(
@@ -131,10 +135,23 @@ def run_chatbot():
         print(f"[!] Gagal memuat model: {e}")
         return
 
+    # Check if FAISS index is available for sub-millisecond retrieval across full catalog
+    faiss_index = None
+    response_catalog = None
+    if os.path.exists(faiss_path) and os.path.exists(catalog_path):
+        try:
+            faiss_index = faiss.read_index(faiss_path)
+            with open(catalog_path, "r", encoding="utf-8") as f:
+                response_catalog = json.load(f)
+            print(f"[✓] FAISS Vector Engine Aktif: {faiss_index.ntotal} respon klinis terindeks (<1ms search).")
+        except Exception as e:
+            print(f"[!] FAISS index warning: {e}, menggunakan fallback pool.")
+
     memory = DialogueMemory(max_history=3)
 
     print("\n[✓] IndoMentalBERT siap berdiskusi!")
     print("Fitur aktif:")
+    print("  • Mesin Pencari Vektor FAISS Sub-milisecond (Non-Generatif, Aman)")
     print("  • Normalisasi bahasa gaul / singkatan (gw, bgt, ga bs, overthinking)")
     print("  • Memori percakapan multi-turn (kontekstual)")
     print("  • Rekomendasi klinis modular 3-tier (Validasi + Insight + Solusi)")
@@ -167,25 +184,37 @@ def run_chatbot():
         # Step 3: Multi-Turn Context Fusion
         contextual_query = memory.get_contextual_query(normalized_input)
 
-        # Step 4: Semantic QA Matching via IndoMentalBERT
-        matches = query_counselor(
-            contextual_query,
-            model,
-            tokenizer,
-            candidate_pool,
-            device,
-            top_k=1,
-            max_length=128
-        )
+        # Step 4: Semantic Matching (FAISS Vector Search or Fallback)
+        raw_response = None
+        score = 0.0
 
-        if matches:
-            raw_response, score = matches[0]
+        if faiss_index is not None and response_catalog is not None:
+            # Sub-millisecond FAISS query encoding & dot product
+            inputs = tokenizer([contextual_query], padding=True, truncation=True, max_length=128, return_tensors="pt").to(device)
+            with torch.no_grad():
+                q_emb = model.encode_text(inputs["input_ids"], inputs["attention_mask"], is_question=True).cpu().numpy().astype("float32")
+            D, I = faiss_index.search(q_emb, k=1)
+            idx = I[0][0]
+            score = float(D[0][0])
+            raw_response = response_catalog[idx]
+        else:
+            matches = query_counselor(
+                contextual_query,
+                model,
+                tokenizer,
+                candidate_pool,
+                device,
+                top_k=1,
+                max_length=128
+            )
+            if matches:
+                raw_response, score = matches[0]
 
-            # Step 5: Modular Atomic Response Assembly (Tier 1: Validation + Tier 2: Insight + Tier 3: Actionable Step)
+        if raw_response:
+            # Step 5: Modular Atomic Response Assembly
             atomic_reply = build_atomic_response(raw_user_input, raw_response, score)
             print(f"\nIndoMentalBERT [Kesesuaian: {score*100:.1f}%] >")
             print(f"{atomic_reply}\n")
-
             memory.add_turn(raw_user_input, atomic_reply)
         else:
             fallback = "Saya memahami ini hal yang tidak mudah. Bisa tolong ceritakan sedikit lebih banyak agar saya bisa memahamimu dengan lebih baik?"
