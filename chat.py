@@ -29,11 +29,13 @@ try:
     from slang_normalizer import normalize_slang
     from response_builder import build_atomic_response
     from knowledge_graph import ClinicalKnowledgeGraph
+    from clinical_judgement import ClinicalJudgementEngine
 except ImportError:
     from demo import load_model_and_pool, query_counselor
     from src.slang_normalizer import normalize_slang
     from src.response_builder import build_atomic_response
     from src.knowledge_graph import ClinicalKnowledgeGraph
+    from src.clinical_judgement import ClinicalJudgementEngine
 
 # 1. Deterministic Crisis Regex Safeguard
 CRISIS_KEYWORDS = [
@@ -151,7 +153,8 @@ def run_chatbot():
 
     # Initialize Indonesian Psychiatric Clinical Knowledge Graph
     kg = ClinicalKnowledgeGraph()
-    print("[✓] Psychiatric Knowledge Graph Aktif (Ontologi Gangguan & Distorsi Kognitif).")
+    judgement_engine = ClinicalJudgementEngine()
+    print("[✓] Psychiatric Knowledge Graph & Clinical Judgement Engine Aktif.")
 
     memory = DialogueMemory(max_history=3)
 
@@ -202,7 +205,10 @@ def run_chatbot():
         # Step 4: Knowledge Graph Reasoning (Ontology & Cognitive Distortions)
         kg_diag = kg.reason(contextual_query)
 
-        # Step 5: Semantic Matching (FAISS Vector Search or Fallback)
+        # Step 5: Clinical Judgement Assessment (Patient Psychological Condition & Policy)
+        state_assessment = judgement_engine.evaluate_state(active_input, history_len=len(memory.history))
+
+        # Step 6: Semantic Matching (FAISS Vector Search or Fallback)
         raw_response = None
         score = 0.0
 
@@ -229,23 +235,28 @@ def run_chatbot():
                 raw_response, score = matches[0]
 
         if raw_response:
-            # Step 6: Modular Atomic Response Assembly
-            atomic_reply = build_atomic_response(active_input, raw_response, score)
+            # Step 7: Dynamic Response Adaptation based on Clinical Judgement
+            adaptive_reply = judgement_engine.adapt_response(
+                user_input=active_input,
+                retrieved_response=raw_response,
+                similarity_score=score,
+                state_assessment=state_assessment
+            )
             
             # If in Researcher Diagnostic Mode (/diag), output clinical reasoning metadata
             if explain_mode:
                 print("\n🔬 [RESEARCHER CLINICAL REASONING XAI]")
-                print(f"  • Tingkat Risiko Klinis : {kg_diag['risk_level']}")
-                print(f"  • Kategori Psikiatrik  : {kg_diag['disorder']}")
-                print(f"  • Gejala Somatik/Afektif: {', '.join(kg_diag['symptoms_found']) if kg_diag['symptoms_found'] else 'Keluhan non-spesifik'}")
-                print(f"  • Distorsi Kognitif     : {', '.join(kg_diag['cognitive_distortions'])}")
-                print(f"  • Intervensi Klinis     : {kg_diag['clinical_intervention']['technique']}")
-                print(f"  • Rationale Medis       : {kg_diag['clinical_intervention']['clinical_rationale']}")
-                print(f"  • Skor FAISS Alignment  : {score*100:.2f}%\n")
+                print(f"  • Kondisi Psikologis Pasien : {state_assessment['user_condition']}")
+                print(f"  • Tone Adaptif Persona      : {state_assessment['policy']['persona_tone']}")
+                print(f"  • Tingkat Risiko Klinis     : {kg_diag['risk_level']}")
+                print(f"  • Kategori Psikiatrik       : {kg_diag['disorder']}")
+                print(f"  • Gejala Terdeteksi         : {', '.join(kg_diag['symptoms_found']) if kg_diag['symptoms_found'] else 'Non-spesifik'}")
+                print(f"  • Distorsi Kognitif         : {', '.join(kg_diag['cognitive_distortions'])}")
+                print(f"  • Skor FAISS Alignment      : {score*100:.2f}%\n")
 
-            print(f"\nIndoMentalBERT [Kesesuaian: {score*100:.1f}%] >")
-            print(f"{atomic_reply}\n")
-            memory.add_turn(active_input, atomic_reply)
+            print(f"\nIndoMentalBERT [Kondisi: {state_assessment['user_condition']} | Kesesuaian: {score*100:.1f}%] >")
+            print(f"{adaptive_reply}\n")
+            memory.add_turn(active_input, adaptive_reply)
         else:
             fallback = "Saya memahami ini hal yang tidak mudah. Bisa tolong ceritakan sedikit lebih banyak agar saya bisa memahamimu dengan lebih baik?"
             print(f"\nIndoMentalBERT >\n{fallback}\n")
