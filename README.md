@@ -6,15 +6,22 @@ Built on an encoder-only architecture (`indobenchmark/indobert-base-p1`) with de
 
 ---
 
-## System Architecture
+## System Architecture & Novel Dual-Stream Framework
 
-The pipeline consists of four modular stages:
+The pipeline integrates **Symbolic Clinical Reasoning** with **Neural Representation Learning**:
 
 1. **Indonesian Slang Normalizer (`src/slang_normalizer.py`)**: Converts colloquial terms, youth slang, and informal contractions into standard Indonesian before tokenization.
 2. **Multi-Turn Context Buffer (`DialogueMemory`)**: Retains recent conversational turns to contextualize short user follow-ups.
-3. **IndoMentalBERT Dual-Encoder (`src/model.py`)**: Encodes user queries and candidate responses with Feed-Forward projection heads, evaluating cosine alignment against clinical data.
-4. **Atomic Response Builder (`src/response_builder.py`)**: Assembles structured 3-tier advice (Empathetic Validation + Educational Insight + Actionable Step).
-5. **Deterministic Crisis Safeguards**: Regex-based detection for self-harm keywords that directly surfaces Indonesian emergency helplines.
+3. **Indonesian Psychiatric Knowledge Graph (`src/knowledge_graph.py`)**: PDSKJI & DSM-5 ontology mapping somatic/affective complaints into 5 psychiatric archetypes, extracting cognitive distortions and grounding evidence-based clinical protocols.
+4. **Adaptive Clinical Judgement Engine (`src/clinical_judgement.py`)**: Evaluates the dynamic psychological condition of the user and enforces a **Clinical Policy Matrix**:
+   - `ACUTE_DISTRESS` (Crying/Panic): Low-cognitive load soothing + immediate somatic grounding.
+   - `FRUSTRATED_RESISTANT` (Cynical/Exhausted): Collaborative validation + autonomy respect.
+   - `RUMINATIVE_OVERTHINKING` (What-if paralysis): Cognitive reframing + concrete micro-action.
+   - `LONELY_EMPTY` (Apathy/Isolation): Warm companionship + holding presence.
+   - `SEEKING_PSYCHOEDUCATION`: Structured 3-tier clinical insight.
+5. **IndoMentalBERT Multi-Task Dual-Encoder (`src/model.py`)**: Hard-parameter sharing encoder (`indobenchmark/indobert-base-p1`) for simultaneous response retrieval, clinical severity triage, and distortion classification.
+6. **FAISS Sub-Millisecond Vector Index**: Instant dense retrieval (< 1ms) over 3,504 validated clinical responses.
+7. **Deterministic Crisis Safeguards**: Regex-based detection for self-harm keywords that directly surfaces Indonesian emergency helplines.
 
 ---
 
@@ -61,18 +68,26 @@ Evaluated against original clinical human counselor responses:
 ```text
 IndoMentalBERT/
 ├── data/
-│   └── intentsindonesian.json       # Categorized mental health intent data
+│   └── intentsindonesian.json       # Categorized mental health intent data (200 intents)
 ├── data.csv                         # 5,667 counseling dialogue corpus
+├── reports/
+│   ├── evaluation_metrics.png       # 300 DPI publication evaluation graph
+│   └── metrics_summary.json         # Raw metrics summary (Accuracy, F1, BLEU)
 ├── src/
-│   ├── model.py                     # Siamese IndoMentalBERT architecture
+│   ├── model.py                     # Multi-task IndoMentalBERT architecture
+│   ├── knowledge_graph.py           # Indonesian Psychiatric Knowledge Graph (PDSKJI/DSM-5)
+│   ├── clinical_judgement.py        # User state classifier & adaptive policy engine
+│   ├── guided_retrieval.py          # Unified symbolic-neural FAISS engine
 │   ├── preprocess.py                # Dataset preparation and contrastive pairs
 │   ├── slang_normalizer.py          # Indonesian slang normalization rules
 │   ├── response_builder.py          # Modular 3-tier response assembler
 │   └── train.py                     # Model training and checkpointing script
 ├── rasa/                            # Rasa NLU configuration and policies
-├── outputs/                         # Trained model checkpoint storage
-├── chat.py                          # Interactive CLI conversational agent
+├── outputs/                         # Trained model checkpoint & FAISS index
+├── chat.py                          # Interactive CLI conversational agent (with /diag XAI)
 ├── demo.py                          # Top-k response retrieval script
+├── build_faiss_and_eval.py          # Pipeline to build FAISS index & run metrics
+├── RESEARCH_METHODOLOGY.md          # Scientific paper draft and methodology
 ├── FineTuningIndoBERT_Updated.ipynb # Google Colab and Jupyter notebook
 ├── IMPLEMENTATION_DETAILS.md        # Technical documentation and write-up
 ├── requirements.txt                 # Project dependencies
